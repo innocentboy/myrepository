@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="C++_Demo_Project" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="fileIO\;inheritanceConcept\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\C++_Demo_Project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\C++_Demo_Project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Date.cpp" />
+		<Unit filename="Date.h" />
+		<Unit filename="Exception.cpp" />
+		<Unit filename="Headers.h" />
+		<Unit filename="InheritanceDemo.cpp" />
+		<Unit filename="Radio.cpp" />
+		<Unit filename="ReadFileAndRemoveDuplicates.cpp" />
+		<Unit filename="Receiver.cpp" />
+		<Unit filename="Storable.cpp" />
+		<Unit filename="Transmitter.cpp" />
+		<Unit filename="VectorDemo.cpp" />
+		<Unit filename="in.txt">
+			<Option virtualFolder="fileIO\" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="out.txt">
+			<Option virtualFolder="fileIO\" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

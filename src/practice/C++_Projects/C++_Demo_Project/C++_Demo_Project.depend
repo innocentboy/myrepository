@@ -1,0 +1,75 @@
+# depslib dependency file v1.0
+1373825591 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\main.cpp
+	"Headers.h"
+	"Date.h"
+	"Exception.cpp"
+	"VectorDemo.cpp"
+	"Storable.cpp"
+	"InheritanceDemo.cpp"
+
+1373744490 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\vectordemo.cpp
+	"Headers.h"
+
+1373744484 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\readfileandremoveduplicates.cpp
+	"Headers.h"
+
+1373516265 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\date.cpp
+	"Date.h"
+
+1373744454 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\date.h
+	"Headers.h"
+
+1373515754 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\date.cpp
+	"Date.h"
+
+1373744475 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\exception.cpp
+	"Headers.h"
+
+1373744475 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\exception.cpp
+	"Headers.h"
+
+1373744490 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\vectordemo.cpp
+	"Headers.h"
+
+1373744376 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\headers.h
+	<cstdio>
+	<iostream>
+	<algorithm>
+	<iterator>
+	<exception>
+	<set>
+	<vector>
+	<list>
+	<map>
+	<stack>
+	<queue>
+	<cstring>
+
+1373791758 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\radio.cpp
+
+1373790976 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\transmitter.cpp
+	"Storable.cpp"
+
+1373823167 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\storable.cpp
+	"Headers.h"
+
+1373790971 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\receiver.cpp
+	"Storable.cpp"
+
+1373823167 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\storable.cpp
+	"Headers.h"
+
+1373791763 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\receiver.cpp
+
+1373791747 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\transmitter.cpp
+
+1373790960 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\radio.cpp
+	"Transmitter.cpp"
+	"Receiver.cpp"
+
+1373825580 d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\inheritancedemo.cpp
+	"Headers.h"
+
+1373825580 source:d:\my\dev-cpp\c10\practice\c++_projects\c++_demo_project\inheritancedemo.cpp
+	"Headers.h"
+

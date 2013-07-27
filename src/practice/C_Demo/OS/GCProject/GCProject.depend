@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1372953560 source:d:\my\dev-cpp\c10\practice\c_demo\os\gcproject\main.cpp
+	<iostream>
+	"GCPtr.cpp"
+
+1372954308 d:\my\dev-cpp\c10\practice\c_demo\os\gcproject\gcptr.cpp
+	<cstdio>
+	<list>
+	<iostream>
+	"GCInfo.cpp"
+	"Iter.h"
+
+1372953166 d:\my\dev-cpp\c10\practice\c_demo\os\gcproject\gcinfo.cpp
+
+1372954266 d:\my\dev-cpp\c10\practice\c_demo\os\gcproject\iter.cpp
+	"iter.h"
+
+1372953802 d:\my\dev-cpp\c10\practice\c_demo\os\gcproject\iter.h
+	<cstdio>
+	<iostream>
+	<list>
+
