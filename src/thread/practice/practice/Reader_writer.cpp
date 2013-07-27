@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 TCS. All rights reserved.
 //
 
-/*
+
 
 #include "Reader_writer.h"
 pthread_t wrtr[3],readr[3];
@@ -114,9 +114,9 @@ void queueDelete (queue1 *q)
     free(q);
 }
 
-*/
 
-/*
+
+
 void queueAdd (queue *q, int in)
 {
     q->buf[q->tail++]=in;
@@ -137,4 +137,4 @@ void queueDel (queue *q, int *out)
     if(q->tail==q->head)
         q->empty=1;
     q->full=0;
-}*/
+}
