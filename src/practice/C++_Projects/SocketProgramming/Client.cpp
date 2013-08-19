@@ -51,12 +51,14 @@ int main(int argc,char *argv[])
    error("some problem in connection..");
    return 1;
   }
+   bool stop=true;
+   while(stop){
    printf("\nplease enter the message..\n");
    bzero(buffer,sizeof(buffer));
    fgets(buffer,sizeof(buffer)-1,stdin);
    n=write(sockfd,buffer,strlen(buffer));
    if(n<0)
-{
+ {
     error("some error in writing to the port..");
  }
   bzero(buffer,sizeof(buffer));
@@ -67,5 +69,7 @@ int main(int argc,char *argv[])
   return 1;
  }
   printf("\nreceived the meggage fron server:%s\n",buffer);
+  
+ }
   return 0;
 }
