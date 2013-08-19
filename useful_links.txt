@@ -1,5 +1,6 @@
 Serial Communication programmings
 http://www.cmrr.umn.edu/~strupp/serial.html
+http://lubosweb.php5.sk/soft/05_serial_posix/serial_port_programming_win_linux.pdf
 
 assembley:
 http://www.ibm.com/developerworks/library/l-ia/index.html
