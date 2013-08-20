@@ -18,3 +18,7 @@ Thread:
 http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.aix.basetechref/doc/basetrf1/pthread_join.htm
 http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.aix.basetechref/doc/basetrf1/pthread_cancel.htm
 http://linux.die.net/man/3/pthread_detach
+
+
+Projects link:
+http://www.codeproject.com/KB/cpp/
