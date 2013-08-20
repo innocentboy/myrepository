@@ -5,6 +5,7 @@ http://stackoverflow.com/questions/10242648/programming-linux-serial-port-ttys0
 http://www.lafn.org/~dave/linux/Serial-Programming-HOWTO-B.txt
 http://www.tldp.org/HOWTO/Serial-HOWTO-4.html
 http://www.netzmafia.de/buecher/linuxhackz/Programme/Seriell/linux_serial_mini_howto.pdf
+https://github.com/energia/Energia/wiki/Linux-Serial-Communication
 
 assembley:
 http://www.ibm.com/developerworks/library/l-ia/index.html
