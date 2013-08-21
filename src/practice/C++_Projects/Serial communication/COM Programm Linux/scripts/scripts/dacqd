@@ -1,0 +1,17 @@
+#!/bin/bash
+SCAN_RATE=3
+
+while :
+  do
+    datestamp=`date "+%m%d%Y"`
+    timestamp=`date "+%H:%M.%S"`
+    data=$(rs232 -b600 -p7n2 -s"\n" -r16 2>>dacqlog)
+    data=$(echo -n $data|awk '{print $2}')
+    sleep $SCAN_RATE 
+    echo $timestamp, $data >> $datestamp 
+  done
+
+
+
+  
+  

@@ -1,0 +1,60 @@
+2001-04-28 <bpeterso@aspenresearch.com>
+Release of Sjinn 0.9.1 (Tx/Rx hex, --hex, and --hex+, support)
+ * Added support for \h control character in send strings
+   \h enables hex mode the 2nd \h returns to ASCII mode.
+   example:  rs232 -s "\h65 66 67\h\n"
+ * Added support for --hex and --hex+ options to display read buffer
+   in hex or ASCII over hex.
+    
+2001-04-29 <bpeterso@aspenresearch.com>
+Release of Sjinn 0.9.1.1 (wait/pause options float support)
+ * Had added a 'sanity check' on wait/pause options before initial release...
+   Sanity check uses isdigit which does not recognize decimal points. Changed
+   ck_atof function to accept decimal points (since pause/wait options
+   are float values). 
+ 
+2001-05-02 <bpeterso@aspenresearch.com>
+Release of Sjinn 0.9.1.2
+ * Changed error handling method in RS232main.c and RS232ctl.c to exit
+   more gracefully when errors occur.
+ * Changed hex code verbose display from <0x##> to (##), the number is
+   actually the hex number converted to decimal. It is now represented 
+   properly.
+ * Added ChangeLog, sjinn.html, and EXAMPLES.
+ * Modified README and INSTALL.  
+
+2001-05-09 <bpeterso@aspenresearch.com>
+Release of Sjinn 1.0
+ * Hex codes >0x7F are now displayed correctly for both read and send
+ * Verbose mode displays hex values being sent in hex not decimal
+ * Removed annoying line feeds after 25 characters are displayed
+ * Added --wrap option
+ * Added --trim option (truncates line)
+ * Added -m, --msec option (allows user to specify --pause and 
+         \w wait times in milliseconds instead of seconds
+ * Added -n, --nolf option (no line feed)
+ * Added support for '\w' in send strings (programmable wait times)
+ * Added support for '\\' in send strings (back slash character)
+ * Added support for '\-' in send strings (minus-sign/dash character)
+ * Unprintable ASCII characters are now displayed with '.' character
+ * Verbose now prints status (+ or -) for DTR, RTS, CTS, DSR lines
+ * -s"" or -s now displays warning
+ * Sjinn with no options now suggests type sjinn --help
+ * Added sample scripts and updated sh-install to extract them
+ * Makefile removes old symbolic links first before creating new ones
+   so that upgrades don't display an error.
+ * Added hidden --rand option which uses length from -r## and generates
+   random characters using ## from -r as the seed (this reproduces the same
+   random characters for the same length - used for debugging purposes.
+   Several predefined characters are set "testing\n" is copied to beginning of
+   buffer and character 144 at position #9, 160 at #10, and 10 at #100. This
+   is used for testing the output formatting.
+ 
+2007-05-26 <bpeterso2000@yahoo.com>
+Changes courtesy of Brian S. Julin 2004-01-30 & Diego Wende 2007-05-01
+Release Sjinn 1.01
+ * Broke out multi-strings in to separate printf statements (deprecated in
+   newer versions of GCC.
+ * Added <string.h> to rs232main.c
+ * Added a new digital multimeter model to EXAMPLES
+ * Change to Makefile for man file target.

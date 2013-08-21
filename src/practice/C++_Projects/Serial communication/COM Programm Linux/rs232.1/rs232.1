@@ -1,0 +1,89 @@
+.TH SJINN 1 "May 2001"
+.SH NAME
+sjinn \- RS-232 control and serial communications
+.SH SYNOPSIS
+.B \fBsjinn\fP
+\foption\fR [\fIoptions\fR] ...
+.SH EXAMPLE
+.TP
+sjinn -\fBb\fR600 -\fBp\fR7n2 -\fBs\fR"D" -\fBr\fR14 --\fBverbose\fR
+.SH COMMUNICATIONS OPTIONS
+.TP
+.TP
+\fB\-d\fR, \fB\-\-file\fR [default /dev/ttyS0] serial I/O device
+.TP
+\fB\-b\fR, \fB\-\-baud\fR [default 9600] set baud rate
+50,75,110,134,150,200,300,600,1200,1800,2400,9600,
+19200,38400,57600,115200,230400
+.TP
+\fB\-p\fR, \fB\-\-comm\fR [default 8N1] set databits,parity,stopbits
+(5,6,7,8)(N,E,O)(1,2)
+note: 3 character string each parameter is a single character i.e. '7N2' 
+mark and space parity not supported
+.TP
+\fB\-\-xonxoff\fR [default off] XON/XOFF - software flow control
+.TP
+\fB\-\-rtscts\fR [default off] RTS/CTS - hardware flow control
+.TP
+\fB\-\-dtr\fR [default enabled] disable DTR
+.TP
+\fB\-\-rts\fR [default disabled] enable RTS
+.TP
+\fB\-s\fR, \fB\-\-send\fR STRING write string to device
+note: in addition to ASCII characters the following 
+control-chars are supported: \\r \\n \\0 \\p \\h \\w \\\\
+.TP
+\fB\-r\fR, \fB\-\-read\fR INT read n characters from device 
+.TP
+\fB\-w\fR, \fB\-\-wait\fR FLOAT [default 0.5] seconds between send & read 
+.TP
+\fB\-\-pause\fR FLOAT [default = wait] wait time for pause-character, if not specified it is set to the value of the -w parameter 
+.TP
+\fB\-m\fR, \fB\-\-msec\fR specify \\w and \\p in milliseconds instead of seconds
+.SH FORMATTING OPTIONS
+.TP
+\fB\-\-hex\fR  [default=ASCII] display read buffer in hex values
+.TP
+\fB\-\-hex+\fR [default=ASCII] display read buffer in hex + ASCII
+.TP
+\fB\-\-wrap\fR INT wrap lines at n characters
+.TP
+\fB\-\-trim\fR INT truncate lines at n characters
+.TP
+\fB\-\-n\fR, \fB\-\-nolf do not output the trailing new line
+.TP
+\fB\-\-verbose\fR verbose      
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-\-help\fR display this help and exit
+.TP
+\fB\-V\fR, \fB\-\-version\fR output version and exit
+.SH SEND STRING CONTROL-CHARACTERS
+.TP
+\fB\\\\\fR  Back-Slash
+.TP
+\fB\\-\fR  Minus-Sign (dash)
+.TP
+\fB\\n\fR  LF
+.TP
+\fB\\r\fR  CR
+.TP
+\fB\\p\fR  Pause
+Delay number of seconds/mSec defined by --pause
+.TP
+\fB\\w\fR  Wait
+Delay number of seconds/mSec specified, number must be followed by a space (example: -s"cmd1\\n\\w.5 cmd2\\n")
+.TP
+\fB\\h\fR  Hex Mode
+Toggle to/from hex mode, hex codes must be 2-characters followed by a space (example: -s"command1\\h9e 4c\\h\\n")
+.PP
+.SH "AUTHOR"
+Brian Peterson, Aspen Research Corporation
+.PP
+.SH "BUGS"
+Report bugs at <http://sourceforge.net/projects/sjinn>
+.PP
+.SH "WARRANTY"
+This is free software with ABSOLUTELY NO WARRANTY
+
+

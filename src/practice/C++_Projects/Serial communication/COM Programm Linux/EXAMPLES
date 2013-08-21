@@ -1,0 +1,151 @@
+Example:
+
+RadioShack CAT.II (CAT. NO. 22-805) also Global Specialties PRO-70
+$ rs232 -b600 -p7n2 -s"\n" -r16
+DC  2.989  V
+$ rs232 -b600 -p7n2 -s"\n" -r16 --verbose
+/dev/ttyS0 600 7N2 +dtr -rts -cts -dsr
+send <crlf>
+wait 0.500000 seconds
+read 16 characters
+DC  2.989   V
+$
+
+Gage Connections Inc. GageMux (PartNo: 100-20P)
+$ rs232 -s "R01\r\p\R01\r" -r8 --verbose
+/dev/ttyS0 9600 8n1 +dtr -rts -cts -dsr
+send R01<lf><pause>
+wait 0.500000 seconds
+R01<lf>
+wait 0.500000 seconds
+read 8 characters
+ -0.1750
+$
+
+MOVED DEVICE to a DIFFERENT SERIAL PORT
+---------------------------------------
+$ rs232 -d /dev/ttyS1 -s "R01\r\p\R01\r" -r8
+ -0.1750
+$
+
+SENDING HEX VALUES
+------------------
+Notes:
+1) \h toggles hex/ASCII mode, default = ASCII
+2) notice the numbers in () are the hex values converted to decimal
+
+$rs232 -d /dev/ttyS1 -s"\h52 30 31 OD\h\p\h52 30 31 OD" -r8 --verbose
+/dev/ttyS1 9600 8n1 +dtr -rts -cts -dsr
+send <hex>(82)(48)(49)(13)<ascii><pause>
+wait 0.500000 seconds
+<hex>(82)(48)(49)(13)
+wait 0.500000 seconds
+read 8 characters
+ -0.1750
+$
+
+SPECIFYING WAIT TIME
+--------------------
+$rs232 -d /dev/ttyS1 -s"\h52 30 31 OD\h\p\h52 30 31 OD" -r8 --wait .65 --verbose
+/dev/ttyS1 9600 8n1 +dtr -rts -cts -dsr
+send <hex>(82)(48)(49)(13)<ascii><pause>
+wait 0.650000 seconds
+<hex>(82)(48)(49)(13)
+wait 0.650000 seconds
+read 8 characters
+ -0.1750
+$
+
+SPECIFY DIFFERENT PAUSE TIME
+----------------------------
+Note: pause characters are set to wait value by default
+$rs232 -d /dev/ttyS1 -s"\h52 30 31 OD\h\p\h52 30 31 OD" -r8\
+> --wait .65 --pause .45 --verbose
+/dev/ttyS1 9600 8n1 +dtr -rts -cts -dsr
+send <hex>(82)(48)(49)(13)<ascii><pause>
+wait 0.450000 seconds
+<hex>(82)(48)(49)(13)
+wait 0.650000 seconds
+read 8 characters
+ -0.1750
+$
+
+Liebert Environmental Communications Adapter (ECA2)
+---------------------------------------------------
+
+EXAMPLE of ASCII OUTPUT
+-----------------------
+rs232 -s"STA\r" -r200 -w4
+
+
+ COOLING        GLYCOOL OFF
+
+ HUM/DEHUM OFF
+
+ TEMP READING                  72        F
+
+ HUM  READING                  59
+
+ % HEAT/COOL                   000
+
+ STAGES HEAT/COOL              0
+
+ DEGREES(F/C)                  F
+
+ UNIT IS ON
+
+ 1>.z..@L..............@....p..
+$
+
+EXAMPLE of WRAPPING HEX + ASCII
+-------------------------------
+$ rs232 -s"STA\r" -r255 -w4 --hex+ --wrap 80
+CR
+ a 
+    H  U  M  /  D  E  H  U  M     O  F  F CR
+20 48 55 4d 2f 44 45 48 55 4d 20 4f 46 46  a 
+CR
+ a 
+    T  E  M  P     R  E  A  D  I  N  G                                        
+20 54 45 4d 50 20 52 45 41 44 49 4e 47 20 20 20 20 20 20 20 20 20 20 20 20 20 
+                7  2                          F CR
+20 20 20 20 20 37 32 20 20 20 20 20 20 20 20 46  a 
+CR
+ a 
+    H  U  M        R  E  A  D  I  N  G                                        
+20 48 55 4d 20 20 52 45 41 44 49 4e 47 20 20 20 20 20 20 20 20 20 20 20 20 20 
+                5  9 CR
+20 20 20 20 20 35 39  a 
+CR
+ a 
+    %     H  E  A  T  /  C  O  O  L                                           
+20 25 20 48 45 41 54 2f 43 4f 4f 4c 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+                0  0  0 CR
+20 20 20 20 20 30 30 30  a 
+CR
+ a 
+    S  T  A  G  E  S     H  E  A  T  /  C  O  O  L                            
+20 53 54 41 47 45 53 20 48 45 41 54 2f 43 4f 4f 4c 20 20 20 20 20 20 20 20 20 
+                0 CR
+20 20 20 20 20 30  a 
+CR
+ a 
+    D  E  G  R  E  E  S  (  F  /  C  )                                        
+20 44 45 47 52 45 45 53 28 46 2f 43 29 20 20 20 20 20 20 20 20 20 20 20 20 20 
+                F CR
+20 20 20 20 20 46  a 
+CR
+ a 
+    U  N  I  T     I  S     O  N CR
+20 55 4e 49 54 20 49 53 20 4f 4e  a 
+CR
+ a 
+CR
+ a 
+CR
+ a 
+ 1  >  .  z  .  .  @  L  .  .  .  .  .  .  .  .  .  .  .  .  .  .  @  .  .  .
+31 3e bf 7a f2  4 40 4c f9 ff  0  2  0  0  0  0  0  0  0 cc f6  b 40  7  0  0 
+ .  p  .  .  .
+ 0 70 89  4  8 
+

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+case "$1" in
+  start)
+	echo -n "Starting data acquisition: "
+	sleep 1
+     	nohup ./dacqd &>/dev/null &
+	echo -n "dacq started at " >> dacqlog
+	date >> dacqlog
+	echo dacqd
+	;;
+  stop)
+	echo -n "Shutting down data acquisition: "
+        echo -n "dacq stopped at " >> dacqlog
+	date >> dacqlog
+        killall dacqd
+	echo dacqd
+	;;
+  restart)
+	$0 stop
+	$0 start
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit 0

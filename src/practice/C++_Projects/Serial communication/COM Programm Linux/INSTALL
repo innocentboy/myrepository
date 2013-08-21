@@ -1,0 +1,45 @@
+INSTALLATION INSTRUCTIONS
+-------------------------
+
+./sh-install
+
+when done type rs232 --help
+
+INSTALLATION for NEWBIES
+------------------------
+Note: You will need to install as root.
+
+Change to the directory under which you want the sjinn source code installed.
+
+Type the following:
+
+tar xvfz sjinn-0.9.tar.gz
+cd sjinn-0.9
+./sh-install
+
+Note: If sjinn-0.9.tar.gz is not in the current directory
+you will need to include the pathname before the filename for example:
+tar xvfz /downloads/sjinn-0.9.tar.gz
+
+When the installation if finished type 'rs232 -h'. For additional information:
+'man sjinn', 'lynx sjinn.html', 'less FAQS', 'less README', 'less EXAMPLES' 
+
+UNINSTALL
+---------
+If you want to uninstall the package 'cd' to the sjinn-0.9 directory and type:
+
+make uninstall
+cd ..
+rm -f sjinn-0.9
+
+
+NOTES
+-----
+See FAQS
+
+------------------------------------------------------------------------------
+last updated May 2001
+Brian Peterson <bpeterso@aspenresearch.com>
+Sjinn is hosted at <sjinn.sourceforge.net>
+
+

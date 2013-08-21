@@ -1,0 +1,6 @@
+#!/bin/bash
+make clean &&
+./configure &&
+make &&
+make install &&
+tar xvfz scripts.tar.gz 2>/dev/null

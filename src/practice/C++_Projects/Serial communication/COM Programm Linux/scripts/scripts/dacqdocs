@@ -1,0 +1,24 @@
+Description
+-----------
+1) Will start and stop data acquisition with sjinn
+2) Will store data in a file named mmddyyyy (current month, day, and year)
+   It will automatically create a new file for each day.
+3) readings will be stored in file as 'hh:mm.ss, reading'
+   (hour, minutes, seconds, reading from instrument)
+4) start and stop times will be recorded in dacqlog
+
+Useage
+------
+From the scripts directory ...
+Modify the rs232 command in 'dacqd' for your particular instrument 
+Modify the sleep value in 'dacqd' to specify time between measurements
+Type './dacq start' to start data acquisition
+Yype 'tail -f mmddyyyy' where mmddyyyy are todays month, day, and year
+You should see the data being written to the file
+Press ctrl-c when you want to quit viewing the data
+Type './dacq stop' when you want to stop aquiring data
+
+Credits
+-------
+These scripts are loosely based on Korn Shell scripts originally
+written by Grant Edwards, Aspen Research Corporation in 1998.

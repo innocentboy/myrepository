@@ -1,0 +1,19 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(rs232.h)
+AC_PROG_CC
+dnl Checks for programs.
+
+dnl Checks for libraries.
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h sys/ioctl.h unistd.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+
+dnl Checks for library functions.
+AC_PROG_GCC_TRADITIONAL
+AC_TYPE_SIGNAL
+AC_CHECK_FUNCS(strtod)
+
+AC_OUTPUT()

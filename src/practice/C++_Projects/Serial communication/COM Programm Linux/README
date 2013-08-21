@@ -1,0 +1,36 @@
+Sjinn - "Serial Communications & RS-232 Control Jini"
+------------------------------------------------------------------------------
+See INSTALL for installation instructions.
+------------------------------------------------------------------------------
+This is free software with ABSOLUTELY NO WARRANTY.
+For details see the file 'COPYING' included with this package.
+------------------------------------------------------------------------------
+Sjinn is maintained at Source Forge <http:/sjinn.sourceforge.net>
+
+Written by:    Brian Peterson <bpeterso@aspenresearch.com>
+               Aspen Research Corporation <www.aspenresearch.com>
+
+Based on:      Multimeter-0.0.5 <home.pages.at/linux>
+               Multimeter was written by Martin Hammerschmid
+------------------------------------------------------------------------------
+Source Forge               <http://sourceforge.net>
+Brian Peterson             <bpeterso@aspenresearch.com>
+Aspen Research Corporation <http://www.aspenresearch.com>
+Multimeter                 <http://home.pages.at/linux>
+------------------------------------------------------------------------------
+README         this file
+INSTALL        installation instructions
+EXAMPLES       command line examples and sample output
+COPYING        GNU Public License
+FAQS           Frequently Asked Questions
+sh-install     BASH installation script
+rs232.html     overview of features
+rs232.h        header files 
+rs232opts.c    set defaults and process command line options
+rs232main.c    main body of program
+rs232ctl.c     rs-232 control and serial communications functions
+rs232.1.gz     man page
+scripts/dacq   Bash script to start and stop data acquisition
+scripts/dacqd  Bash script to automate data acquisition, automatically records
+               readings in a new file each day named mmddyyyy
+	       

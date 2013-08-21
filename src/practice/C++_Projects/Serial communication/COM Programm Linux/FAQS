@@ -1,0 +1,28 @@
+WHY DO SOME EXAMPLES USE RS232 and OTHERS USE SJINN?
+or I RAN the INSTALLATION but WHERE is the PROGRAM?
+The executable created will be located in the source directory and will be
+called rs232. The installation script should have copied rs232 into
+/usr/local/bin and created a symbolic link in /usr/local/bin call sjinn which
+points to rs232.
+
+WHEN I RUN SJINN IT HANGS, WHAT DO I DO?
+If you previously connected to a PPP server using a modem on the SAME serial
+port as your test device is connected to just start up minicom and exit out
+with ctrl-A Q and select YES to leave without reset (you don't need to do
+anything in minicom itself) from then on everything should work fine. Your
+other option is to reboot.
+
+I am UNABLE to COMMUNICATE with the DEVICE, WHAT DO I DO?
+Common problems include too short of wait times (see -w option),
+improper command terminations (i.e. using '\n' instead of '\r' or not
+terminating the command at all), not reading enough characters (for most
+devices it won't hurt to specify more characters than needed, i.e. -r2555),
+and neglecting to use a null modem cable when the device you are
+communicating with is also configured as a DTE device. If all else
+fails first RTFM for the device. If you're still having problems post your
+questions at <http://sourceforge.net/projects/sjinn>, or e-mail me
+<bpeterso@aspenresearch.com>.
+
+
+
+
