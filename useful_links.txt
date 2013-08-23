@@ -7,6 +7,8 @@ http://www.tldp.org/HOWTO/Serial-HOWTO-4.html
 http://www.netzmafia.de/buecher/linuxhackz/Programme/Seriell/linux_serial_mini_howto.pdf
 https://github.com/energia/Energia/wiki/Linux-Serial-Communication
 http://ulisse.elettra.trieste.it/services/doc/serial/
+http://zone.ni.com/devzone/cda/epd/p/id/1727
+http://zone.ni.com/devzone/cda/epd/p/id/1727
 
 
 assembley:
