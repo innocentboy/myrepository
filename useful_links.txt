@@ -28,3 +28,7 @@ http://linux.die.net/man/3/pthread_detach
 
 Projects link:
 http://www.codeproject.com/KB/cpp/
+
+
+OS:
+ http://poincare.matf.bg.ac.rs/~ivana//courses/ps/sistemi_knjige/pomocno/apue.pdf
