@@ -1,7 +1,9 @@
 # depslib dependency file v1.0
-1379530393 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\main.cpp
+1379563452 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\main.cpp
 	<iostream>
 	"list_test.h"
+	"hash_test.h"
+	"Cache_test.h"
 
 1379528990 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\list.cpp
 	"list.h"
@@ -24,4 +26,17 @@
 	<stddef.h>
 	<stdint.h>
 	"list.h"
+
+1379530717 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\hash_test.h
+	"hash.h"
+
+1379577469 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\cache_test.h
+	"Cache.h"
+
+1379563286 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\cache.h
+	<iostream>
+	<stddef.h>
+	<stdint.h>
+	<map>
+	<limits>
 

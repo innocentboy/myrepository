@@ -1,5 +1,7 @@
 #include <iostream>
 #include "list_test.h"
+#include "hash_test.h"
+#include "Cache_test.h"
 
 using namespace std;
 
@@ -14,6 +16,11 @@ int main()
     /**
     Testing function for the generic hash.
     */
+
+    /**
+    Testing function for the Cache implemenation.
+    */
+    //cache_test();
 
     return 0;
 }
