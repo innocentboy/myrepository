@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1379563452 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\main.cpp
+1379605857 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\main.cpp
 	<iostream>
 	"list_test.h"
 	"hash_test.h"
 	"Cache_test.h"
+	"malloc_test.h"
 
 1379528990 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\list.cpp
 	"list.h"
@@ -17,7 +18,7 @@
 	<iostream>
 	"list.h"
 
-1379551576 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\hash.cpp
+1379579763 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\hash.cpp
 	"hash.h"
 	<assert.h>
 
@@ -30,7 +31,7 @@
 1379530717 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\hash_test.h
 	"hash.h"
 
-1379577469 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\cache_test.h
+1379577586 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\cache_test.h
 	"Cache.h"
 
 1379563286 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\cache.h
@@ -39,4 +40,17 @@
 	<stdint.h>
 	<map>
 	<limits>
+
+1379605979 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\malloc_test.h
+	"malloc.h"
+
+1379609528 d:\my\dev-cpp\src\practice\c++_projects\lib_c++\malloc.h
+	<iostream>
+	<stddef.h>
+	<stdint.h>
+	<assert.h>
+	"list.h"
+
+1379612575 source:d:\my\dev-cpp\src\practice\c++_projects\lib_c++\malloc.cpp
+	"malloc.h"
 

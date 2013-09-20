@@ -169,22 +169,19 @@ struct hash_elem *hash_next (struct hash_iterator *i)
 
 /** Returns the current element in the hash table iteration
 */
-struct hash_elem *
-hash_cur (struct hash_iterator *i)
+struct hash_elem *hash_cur (struct hash_iterator *i)
 {
   return i->elem;
 }
 
-/* Returns the number of elements in H. */
-size_t
-hash_size (struct hash *h)
+/** Returns the number of elements in H. */
+size_t hash_size (struct hash *h)
 {
   return h->elem_cnt;
 }
 
-/* Returns true if H contains no elements, false otherwise. */
-bool
-hash_empty (struct hash *h)
+/** Returns true if H contains no elements, false otherwise. */
+bool hash_empty (struct hash *h)
 {
   return h->elem_cnt == 0;
 }
@@ -194,8 +191,7 @@ hash_empty (struct hash *h)
 #define FNV_32_BASIS 2166136261u
 
 /** Returns a hash of the SIZE bytes in BUF. */
-unsigned
-hash_bytes (const void *buf_, size_t size)
+unsigned hash_bytes (const void *buf_, size_t size)
 {
   /* Fowler-Noll-Vo 32-bit hash, for bytes. */
   const unsigned char *buf =(const unsigned char *) buf_;

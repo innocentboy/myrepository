@@ -34,6 +34,9 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Cache.h" />
+		<Unit filename="Cache_test.h">
+			<Option virtualFolder="test\" />
+		</Unit>
 		<Unit filename="hash.cpp" />
 		<Unit filename="hash.h" />
 		<Unit filename="hash_test.h">
@@ -45,6 +48,11 @@
 			<Option virtualFolder="test\" />
 		</Unit>
 		<Unit filename="main.cpp" />
+		<Unit filename="malloc.cpp" />
+		<Unit filename="malloc.h" />
+		<Unit filename="malloc_test.h">
+			<Option virtualFolder="test\" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />

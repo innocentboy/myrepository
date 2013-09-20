@@ -43,10 +43,6 @@
           struct foo *f = list_entry (e, struct foo, elem);
           ...do something with f...
         }
-
-   You can find real examples of list usage throughout the
-   source; for example, malloc.c, palloc.c, and thread.c in the
-   threads directory all use lists.
 */
 
 /** List element. */
