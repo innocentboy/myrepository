@@ -397,4 +397,6 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-s
 
 //********************************//
 Q.30:
+find the first shortest sub-segment that contains each of the given k words at l
 
+LINK:::SET-6
