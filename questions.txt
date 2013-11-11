@@ -14,4 +14,387 @@ For example:
 Q.2: Find the preorder traversal of the binary tree node?
 
 //*******************************//
-Q.3:
+Q.3:There is an integer array consisting positive and negative integers. Find maximum positive difference S defined as:
+S = a - a[j] where i>j
+and
+S > 0
+
+//********************************//
+Q.4:An external system has an array. You are given 3 inbuilt functions which perform their operation in O(1) time.
+
+a) get(i): returns ith element of array
+
+b) length(): returns length of array
+
+c) reverse(i, j): reverses elements of subarray starting from i and ending with j (both inclusive)
+
+write function sortArray() using these three functions.
+
+
+//********************************//
+Q.5:
+Given an array of n elements and an integer k where k<n.
+
+Elements {a[0]…..a[k] and a[k+1]…..a[n] are already sorted. Give an algorithm to sort in O(n) time and O(1) space.
+
+SOLU: you can use an in place merge algo http://thomas.baudel.name/Visualisation/VisuTri/inplacestablesort.html
+
+
+//********************************//
+Q.6:
+you have two BST , they contain the same amount of elements “N” but there structure is different. how will you 
+cross check that the trees are identical with complexity O(N). Also how will you do the same in case its only 
+Binary tree and not a Binary search tree.
+
+
+
+//********************************//
+Q.7:
+Given a graph’s shortest path algorithm, how can you make use of it to find the second shortest path?
+SOLU:
+Let s be the source and d be the destination node in the graph G.
+
+1) Find the shortest path between s and d using the given shortest path algo.
+
+Let the shortest path be s ->v1->v2->v3->...vn->d.
+
+2) For each link in set  (s->v1,  v1->v2, v2-v3, ..... vn->d):
+
+a)  break the link in G and get the shortest path of the remaining graph.
+
+b) Add the broken link back.
+
+3) Return the minimum of all shortest paths calculated in step 2.
+
+
+
+
+//********************************//
+Q.8:I was recently asked this question during my second phone screen for amazon. Given an array containing only 0s and 1s, find the minimum size of subarray containing exactly k-zeros.
+
+Ex. 11010100011
+
+result = 5(01000)
+
+I was able to give an O(n^2) solution but couldn’t do better. Any ideas for a better approach ?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-phone-screen/
+
+
+
+//********************************//
+Q.9:
+Given two sequences of length N, how to find the max window of matching patterns. The patterns can be mutated.
+
+For example, seq1 = “ABCDEFG”, seq2 = “DBCAPFG”, then the max window is 4. (ABCD from seq1 and DBCA from seq2)
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-strings-15/
+
+
+
+//********************************//
+Q.10:
+how to find the ‘Nth’ digit in a continuous stream of data.
+The data is so huge that it cannot be saved in memory.
+Also give the complexity analysis.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/nth-digit-in-a-continuous-stream-of-data/
+
+
+//********************************//
+Q.11:
+Given an array of positive and negative integers. find the first subarray with zero sum?
+
+Note that the array doesn’t contain any 0.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/find-the-first-subarray-with-zero-sum/
+
+
+
+//********************************//
+Q.12:
+1. Given a array, find a first unique integer.
+
+2. Integers are coming as online stream,have to find a kth unique integer till now.
+For 1.
+Even we cannot use sorting for solving this as if we sort it than our first number which is non-repetitive changes.
+The best I am able to do is nlogn using a space of O( n ).
+For 2. No idea
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-qiestion/
+
+
+
+//********************************//
+Q.13:
+There are some glasses with equal volume 1 litre. The glasses kept as follows
+
+1
+
+2 3
+
+4 5 6
+
+7 8 9 10
+
+You can put water to only top glass. If you put more than 1 litre water to 1st glass, water overflow and fill equally both 2nd and 3rd glass. Glass 5 will get water from both 2nd glass and 3rd glass and so on..
+
+If you have X litre of water and you put that water in top glass, so tell me how much water contained by jth glass in ith row.
+
+Example. If you will put 2 litre on top.
+
+1st – 1 litre
+
+2nd – 1/2 litre
+
+3rd – 1/2 litre
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/find-the-quantity-of-water-present-in-the-given-glass/
+
+
+
+//********************************//
+Q.14:
+Given 3 arrays, pick 3 nos, one from each array, say a,b,c such that |a-b|+|b-c|+|c-a| is minimum
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-38/
+
+
+//********************************//
+Q.15:
+suggest a data structure for jigsaw puzzle
+
+
+//********************************//
+Q.16:
+In how many ways 3 identical coins can be placed in 5×5 grid so that no two coin come in same row and same column
+
+SOLU:
+its = 25*16*9/25*24*23
+I  guess zombie is right.
+
+there are 25 cells, suppose you select one of them by 25 chances
+
+then there would be only 16 cells left , which could be selected by , 16 chances
+
+then there would be 9 cells left, therefore total chances are : 25*16*9 / 25*24*23
+
+
+//********************************//
+Q.17:
+Round5 | Q2 : Suppose, Amazon have a Logging system Like This:
+
+They Track all logs daily basis, stored in separate log file.Log contains a collection of tuples of Customer ID and Page ID. 
+The length of Customer ID and Page ID is L1 and L2. 
+Suppose We have a log of D-days , and size of each log fine can be Order of n , where n be the number of customer.
+
+In a most generalized situation, you can assume that a customer can visit the same page multiple times in a day or any number of days.
+
+We are interested to find out the number of Distinct customer visited at-least p distinct pages within exactly T days.
+
+Propose a Data Structure to be use to solve this problem efficiently . Design an Algorithm
+to solve this problem and Find out the complexity of the algorithm.
+
+{Hints:- Double Hashing/ {Hashing +Tries/BST }}
+
+By Sourabh (http://www.geeksforgeeks.org/archives/17629/comment-page-1#comment-7362)
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-135/
+
+
+
+//********************************//
+Q.18:
+Given a 2-D MxN matrix having each value as difficulty for the block. A frog is starting from a point Matrix[0][0] and 
+will have to reach Matrix[M-1][N-1]. It can jump any step in one go [ 1, 2, ..... M-1] horizontally OR [ 1,2,3,.... N-1] vertically
+
+Each difficulty value is positive. Write code to give path trace for frog.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/write-a-program-to-find-path-with-minimu-difficulty-in-mxn-matrix/
+
+
+//********************************//
+Q.19:
+given a number and its permutation, how can we find out the number of transformations by which the number could be 
+transformed into its permutation ?
+
+eg: 2315 and 5213 are given. 2315 can be transformed into 5213 in a series of 2 transformations. first swap 2 and 3. 
+then swap 3 and 5.
+
+suggestions will be welcome .
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-15/
+
+
+
+//********************************//
+Q.20:
+Given an unsorted array of integers, find the second most frequent element in the array
+
+
+
+//********************************//
+Q.21:
+Find the longest subarray which consists of numbers that can be arranged in a continuous sequence.
+
+For ex- {4,5,1,5,7,6,8,4,1}
+
+output-{5,7,6,8,4}.Find the longest
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-26/
+
+
+
+//********************************//
+Q.22:
+Write a program to remove fragment that occur in all strings,where a fragment
+
+is 3 or more consecutive word.
+
+example :
+
+input::
+
+s1 = “It is raining and I want to drive home.”;
+
+s2 = “It is raining and I want to go skiing.”;
+
+s3 = “It is hot and I want to go swimming.”;
+
+output::
+
+s1 = “It is raining drive home.”;
+
+s2 = “It is raining go skiing.”;
+
+s3 = “It is hot go swimming.”;
+
+removed fragment = “and i want to”
+
+i was told that this program will be tested again large files( in example above string are given as a sample)
+
+and then we have to remove fragment from files.so efficiency will be taken into consideration.
+
+Assumptions:Ignore capitalization ,punctuation. but preserve in output.
+
+I told him that i will map the fragment from first string and then search the others, and we actually need to consider 3 length ones only as a 4 length one will implicitly contain two 3 word phrases and the phrases can overlap.
+
+i was stuck when he gave me this kind of example
+
+a a a a a b c b c b c b c
+
+if we are removing fragment “a b c” ,then after removing middle one we got another “a b c” fragment and so on…
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/fragment-removal-in-all-files/
+SOLU LINK:::http://en.wikibooks.org/wiki/Algorithm_implementation/Strings/Longest_common_substring
+
+
+
+//********************************//
+Q.23:
+Given a list of numbers from 1 to N(sorted). either we add or subtract X from a given range say A to B
+(1<=A<B<=N) Y times. The question is find the difference b/w maximum and minimum in that list of number.
+
+Number X and the range A to B could be changed for every Y operations.
+
+
+
+//********************************//
+Q.24:
+There is a straight roads with ‘n’ number of milestones. You are given an array with the distance between all the pairs of milestones in some random Order. Find the position of milestones.
+
+Example:
+
+Consider a road with 4 milestones(a,b,c,d) :
+
+a <— 3Km —>b<— 5Km —>c<— 2Km —>d
+
+Distance between a and b = 3
+
+Distance between a and c = 8
+
+Distance between a and d = 10
+
+Distance between b and c = 5
+
+Distance between b and d = 7
+
+Distance between c and d = 2
+
+All the above values are given in a random order say 7, 10, 5, 2, 8, 3.
+
+The output must be 3,5,2 or 2,5,3
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-122/
+
+
+
+//********************************//
+Q.25:
+you r given an 8×8 chessboard, 8 black coins and 8 white coins. What r all possible ways to place these 
+all coins on board?
+
+SOLU:
+There are C(64, 16) ways to pick 16 places where coins can be placed.
+
+In any of the above picked 16 places, there are 16! ways to place coins. Since 8 coins are white and to be 
+considered same. Similar logic for black coins. The number of ways reduces to (16!)/(8! * 8!)
+
+Total number of ways to place = C(64, 16)*(16!) / (8! * 8!)
+
+
+
+
+//********************************//
+Q.26:
+Write code to print all the possible combinations of the words in a string?
+
+Example:
+
+Input: This is String
+
+This is String
+
+String is This
+
+This String is
+
+String This is
+
+is This String
+
+is String This
+
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-strings-9/
+
+
+
+//********************************//
+Q.27:
+There is a stream of characters. At any point, you can be asked to find out if the string received so far is palindrome or not. Do it in better than O(n) and No extra space.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-about-strings/
+
+
+
+//********************************//
+Q.28:
+There is a matrix where the cost of moving horizontally is 1, vertically is 1 and diagonally is 1. Now given two points, what is the number of shortest paths between these two points.
+
+Hint: This will boil down to permutation with duplicates. Then he asked to code for this.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-125/
+
+
+//********************************//
+Q.29:
+Given an integer n, compute 2 integers x, y satisfying: n<=x*y<=n+2; |x-y| is minimal.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-45/
+
+
+
+//********************************//
+Q.30:
+
