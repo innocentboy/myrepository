@@ -1,0 +1,17 @@
+Q.1: You are given an array of positive integers. Convert it to a sorted array with minimum cost (minimum number of operations). Only valid operation are
+
+1) Decrement -> cost = 1
+
+2) Delete an element completely from the array -> cost = value of element
+
+For example:
+
+4,3,5,6, -> cost 1 //cost is 1 to make 4->3
+
+10,3,11,12 -> cost 3 // cost 3 to remove 3
+
+//********************************//
+Q.2: Find the preorder traversal of the binary tree node?
+
+//*******************************//
+Q.3:
