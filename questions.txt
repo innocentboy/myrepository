@@ -814,55 +814,194 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-about
 
 
 //********************************//
-Q.125:
+Q.126:Given an m-ary tree, need to implement two functions lock and unlock on a node n. You can lock a node if none
+of the nodes in its subtree is locked and none of its ancestors are locked. Unlocking a node should release the lock. 
+Suggest a good data structure for solving this. And implement the lock and unlock functions in O(log n) time
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-data-structure-trees-2/
+
+
+
+//********************************//
+Q.127:
+There are N people in a room and one of them is a celebrity. Everybody knows at least the celebrity while the celebrity
+knows no one. You enter the room to find the celebrity. You are only allowed to pick a person, point to another person, 
+and ask whether the first person knows the second one. How will you find the celebrity in minimum number of questions?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-76/
+
+
+//********************************//
+Q.128:
+A Binary Tree is represented in an int array such that if P is parent and c is its children..a[c]=p
+
+a) Construct a Binary Tree if Such An Array is given…
+
+b) u’ve given an index of node representing root of sub tree.. If we ignore the node and all of its descendants , 
+tell the no.of 
+nodes remaining in tree….
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-trees/
+
+
+//********************************//
+Q.129:
+You are given some 1000000 numbers in the range of 1 to 1000000000 not in any sorted order.The given numbers are random. You need to eliminate the duplicates in the given set of numbers. 
+Consider for optimized solution
+
+
+
+//********************************//
+Q.130:
+Find the largest common subtree of two given BSTs/BTs
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-trees-9/
+
+
+
+//********************************//
+Q.131:
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-81/
+
+
+//********************************//
+Q.132:
+A matrix full of L(land) and D’s(Deserts). At each time D converts surrounding L’s to D’s. Deserts eats Land. 
+Given a matrix find out scenario after t time
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-9/
+
+
+//********************************//
+Q.133:
+You are given the amazon.com database which consists of names of millions of products. When a user enters a .
+search query for particular object with the keyword say “foo”, output all the products which have names having 50% 
+or more similarity with the given keyword ie “foo” Write the most efficient algorithm for the same.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-74/
+
+
+//********************************//
+Q.134:
+Write a program to arrange numbers from 1 to 16 such that the sum of two consecutive numbers is a perfect square.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-75/
+
+
+//********************************//
+Q.135:
+Consider there are N players who have a round robin tournament. input is a data structure which says who won the 
+match for every pair <i , j> i != j. write an algo to give a sequence A[1...n] such that for ever
+i , i th player lost to i+1 th player and won against i-1 th player.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-73/
+
+
+//********************************//
+Q.136:
+In our website, people enter addresses. Each address is made up of some lines. And each address can be represented 
+as rows in a database. how would you design a system which would verify if the addresses 
+are valid or not, that is if the address really exists or not.
+
+LINK:::
+
+
+//********************************//
+Q.137:
+You are provided with a max heap of ‘n’ elements with a number ‘x’ and ‘k’…You have to find whether ‘k’ elements 
+in heap are greater than ‘x’ or not??  Time Complexity should be O(k
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-trees-26/
+
+//********************************//
+Q.138:
+You have ‘n’ players who have played against each other and for each player you have 2 sets
+
+Win = { } Loose = { } which tells you what all players has a given player lost/won against.
+
+You need to arrange them in such a way that player’s to left of each in final result should be 
+winner’s and to the right losers for a player.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-about-algorithms-3/
+
+//********************************//
+Q.139:
+Assume your computer is reading characters one by one from a stream (you don’t know the length of the stream before 
+ending). Note that you have only one character of storage space (so you can’t save the characters you’ve read to a 
+something like a strong). When you’ve finished reading you 
+should return a character out of the stream with equal probability.
+
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-strings-8/
+
+//********************************//
+Q.140:
+http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-arrays-16/
+
+
+//********************************//
+Q.141:
+You are given three files. The files contain data of orders placed by thousands of customes. Find the common 
+customer names in three files.
+
+LINK:::
+
+//********************************//
+Q.142:
+Given a binary tree and a number N, check is there any path exists in the tree such sum of the nodes in the 
+path equals to N.
+bool isPathExists(Node *root, int N)
+Note: We can assume that node contains only positive integers
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-trees-18/
+
+//********************************//
+Q.143:
+You have 50,000 html files, some of which contain phone numbers. How would you create a list of all the files 
+which contain phone numbers?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-52/
+
+//********************************//
+Q.144:
+construct tree from the given ancestor matrix, optimize your solution.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-trees-5/
+
+
+//********************************//
+Q.145:
+given a set of N points where each point is represented as a combination of x and y coordinates, print all 
+sets of collinear points such that set size is more than or equal to 3.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-10/
+
+//********************************//
+Q.146:
+
+
+
+//********************************//
+Q.147:
+
+
+
+//********************************//
+Q.148:
+
+
+
+//********************************//
+Q.149:
 
 
 
 
 //********************************//
-Q.125:
+Q.150:
 
 
 
 
 //********************************//
-Q.125:
-
-
-
-//********************************//
-Q.125:
-
-
-
-//********************************//
-Q.125:
-
-
-
-//********************************//
-Q.125:
-
-
-//********************************//
-Q.125:
-
-
-
-//********************************//
-Q.125:
-
-
-
-//********************************//
-Q.125:
-
-
-
-//********************************//
-Q.125:
-
-
-
-//********************************//
-Q.125:
+Q.151:
