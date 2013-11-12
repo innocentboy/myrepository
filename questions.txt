@@ -598,137 +598,271 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-s
 
 
 //********************************//
-Q.100:
+Q.101:
+Given a value and a binary search tree. Print all the paths (if there exists more than one) 
+which sum up to that value. It can be any path in the tree. It doesn’t have to be from the root
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-trees-43/
+
+
+//********************************//
+Q.102:
+A car is traveling at a uniform speed.The driver sees a milestone showing a 2-digit number. 
+After traveling for an hour the driver sees another milestone with the same digits in reverse order.After another 
+hour the driver 
+sees another milestone containing the same two digits. What is the average speed of the driver?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-puzzle-25/
+
+
+//********************************//
+Q.103:
+Given millions of time intervals, compute the maximum weights and the time when maximum weights occurred.
+
+Time interval is defined as followings (s: starting time, e: ending time, w: weight). And pls note that s, e, and w are not necessary integer.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-30/
 
 
 
 //********************************//
-Q.100:
+Q.104:
+Convert BST int DLL without using recursion and viseversa. 
+
+
+//********************************//
+Q.105:
+Given an integer array A[], what preprocessing you need to do so that when given i and j such that i <= j, 
+you can tell in O(1) time 
+the number of elements in the array having values between and including i and j.
+
+
+LINK:::w-question-for-software-engineerdeveloper-about-arrays-14/
+
+//********************************//
+Q.106:
+given two rectangles, how would you find out whether one rectangle lies inside another?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-61/
+
+//********************************//
+Q.107:
+Find longest interval
+
+We are given with two arrays A and B..each of size N…elements of array contains either 1 or 0…
+
+we have to find such an interval (p,q)(inclusive) such that the sum of all the elements of A 
+(between this interval) and sum of all elements of B (between this interval ) is equal…
+i.e.
+a[p]+a[p+1]….+a[q] = b[p]+b[p+1]….+b[q]
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-arrays-33/
+
+
+//********************************//
+Q.108:
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-data-structure-14/
 
 
 
 //********************************//
-Q.100:
+Q.109:
+1)Given a large file containing 10 bit integers,and a limited memory , sort the entire file and store back
+
+to file.
+
+Constraints : You cannot read entire file in main memory at a time as meory is limited (small)
+
+Follow up questions: Quick sort working,complexity best,avg,worst
+
+Hint :Use property of 10 bit integer
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-25/
+
+
+//********************************//
+Q.110:
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-121/
+
+
+//********************************//
+Q.111:
+Given a set of numbers eg:{2,3,6,7,8} . any one who is playing the game can score points only from this set 
+using the numbers in that set. given a number, print all the possible ways of scoring that many points. Repetition
+of combinations are not allowed.
+
+eg:
+1. 6 points can be scored as
+6
+3+3
+2+2+2
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-23/
 
 
 
 //********************************//
-Q.100:
+Q.112:
+You have a note to write by cutting and pasting necessary letters from the book,
+write an algorithm to see if you can write the note
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-114/
+
+
+//********************************//
+Q.113:
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-arrays-3/
+
+
+//********************************//
+Q.114:
+Implement auto calling functionality of the mobile phone(T9)
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-data-struc-2/
+
+//********************************//
+Q.115:
+given a list of words …you have infinite pre-processing time.Now you are given a word…output all the words from 
+the dictionary that are anagram of this word as efficiently as possible.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-strings-4/
+
+//********************************//
+Q.116:
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-online-interview-question/
+
+
+//********************************//
+Q.117:
+Given three arrays A[], B[] and C[], write a function that returns 1 if there exist a triplet (x, y, z) whose sum is 0, 
+i.e., x + y +z =0. Where x belongs to A, y to B[] and z to C[].
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-arrays-22/
+
+
+//********************************//
+Q.118:
+Given n players, each player plays against every other player. Result of all the matches are given. Arrange 
+the players in such a way that p0, p1, p2,… pi-1, pi, pi+1, pn, pi+1 won over pi and pi won over pi-1.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-8/
+
+
+//********************************//
+Q.119:
+Design a data structure that supports integer of unlimited size.Assume that you have unlimited memory. Implement 
+functions to support addition and subtraction.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher/
+
+
+//********************************//
+Q.120:
+http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-puzzle-4/
+
+
+//********************************//
+Q.121:
+You have two lists, each containing position of a word in some document. Write a program that returns minimum 
+distance between the words in the document.
+
+For example: Suppose X occurs at places {2, 3, 5, 10, 12, 16, 19, 20} and Y occurs at {8, 14, 27, 29}, 
+then the minimum distance between X and Y is 1 (X=12,Y=14 OR X=16,Y=14).
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-36/
+
+
+//********************************//
+Q.122:
+Think of the 8 vertices of a given cube. You are allowed to join three
+
+vertices to form a triangle. How many such unique acute triangles can you
+
+make ??
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-puzzle-3/
 
 
 
 //********************************//
-Q.100:
+Q.123:
+Card shuffle problem. I have a card pack of 313 cards. I remove the topmost card from card pack and place 
+it on desk and I remove the next one and put it below the pack of cards(that you are holding). keep doing this 
+till all the cards are on desk. Pick up the card stack from desk and repeat these steps till you find retrieve the
+original cards orderd. 
+I was asked to code to find how many rounds it will take to retrieve initial order.
 
-
-
-//********************************//
-Q.100:
-
-
-
-//********************************//
-Q.100:
-
-
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-19/
 
 
 //********************************//
-Q.100:
+Q.124:
+You are given an unordered sequence of n integers with many duplications, such that the number of distinct 
+integers in the sequence is O(log n). Design a sorting algorithm and its necessary data structure(s), which 
+can sort the sequence using at most O(n log(log n)) time.
+Give the detailed design.
 
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-arrays-4/
 
+//********************************//
+Q.125:
+Given a distributed system with many clients and many servers where the servers each export a different set of services 
+and each have a different amount of computing power discuss the data structures used in a router to perform load 
+balancing.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-about-data-structure/
 
 
 //********************************//
-Q.100:
-
-
-
-//********************************//
-Q.100:
-
-
-
-//********************************//
-Q.100:
-
-
-
-//********************************//
-Q.100:
-
-
-
-//********************************//
-Q.100:
-
-
-
-//********************************//
-Q.100:
-
-
-
-//********************************//
-Q.100:
-
-//********************************//
-Q.100:
+Q.125:
 
 
 
 
 //********************************//
-Q.100:
-
-
-
-//********************************//
-Q.100:
+Q.125:
 
 
 
 
 //********************************//
-Q.100:
-
-
-
-
-
-//********************************//
-Q.100:
-
+Q.125:
 
 
 
 //********************************//
-Q.100:
+Q.125:
 
 
 
 //********************************//
-Q.100:
-
-
-
-
-//********************************//
-Q.100:
+Q.125:
 
 
 
 //********************************//
-Q.100:
+Q.125:
 
+
+//********************************//
+Q.125:
 
 
 
 //********************************//
-Q.100:
-
+Q.125:
 
 
 
 //********************************//
-Q.100:
+Q.125:
+
+
+
+//********************************//
+Q.125:
+
+
+
+//********************************//
+Q.125:
