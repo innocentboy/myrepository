@@ -400,3 +400,244 @@ Q.30:
 find the first shortest sub-segment that contains each of the given k words at l
 
 LINK:::SET-6
+
+
+
+//********************************//
+Q.83:
+If pairwise sums of ‘n’ numbers are given in non-decreasing order
+
+identify the individual numbers. If the sum is corrupted print -1
+
+Example:
+
+i/p:
+
+4
+
+4 5 7 10 12 13
+
+o/p:
+
+1 3 4 9
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-43/
+
+
+
+
+//********************************//
+Q.84:
+Given a number, generate all the strings that can be obtained with that number on a telephone keypad
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-128/
+
+
+
+//********************************//
+Q.85:
+Given an array-based heap on n elements and a real number x, efficiently determine whether the kth smallest element 
+in the heap is greater than or equal to x. Your algorithm should be O(k) in the worst-case, independent of the size of 
+the heap.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-24/
+
+
+
+
+//********************************//
+Q.86:
+Find the substring of length 3 which is present in the reverse order from the string. Ex: if the string is 
+abcdcba (cba is the reverse of abc) so we should return cba. 
+And was asked to improve upon the complexity.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-strings-6/
+
+
+
+//********************************//
+Q.87:
+In a university, students can enroll in different courses. A student may enroll for more than one course. 
+Both students and courses can be identified by IDs given to them. Design a data structure to store students,
+courses, and the student-course relationships. You can use arrays, lists, stacks, trees, graphs, etc. or come 
+up with your own data structures. Give the running times, in Big O notation, for the following operations for 
+your data structure and justify the answers: a) Return all students in a list. b) Return all courses in a list.
+c) Return all courses in a list for a given student. d) Return all students in a list for a given course.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-39/
+
+
+
+//********************************//
+Q.88:
+We all knw hw to find a loop in a singly linked list (Using hare and tortoise method)..what if the 
+linked list is a doubly linked list?can we do it smthn better than hare n tortoise
+method using the advantage of the doubly linked list?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-linked-lists-15/
+
+
+
+
+//********************************//
+Q.89:
+Given an unsorted array of positive integers and an integer N, return N if N exist in the array or the first 
+number that is smaller than N.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-arrays-42/
+
+
+
+//********************************//
+Q.90:
+input an array of n numbers where each element is an integer in the range [0, N]. (N >> n). 
+present an algorithm that runs in worst case in time O((nlogN)/log(n)) and checks whether
+all these n numbers are distinct. your algorithm should use only o(n) space.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-40/
+
+
+
+//********************************//
+Q.91:
+Suppose a double Dimension array is given of order N x N . And it is filled with distinct elements . 
+Now you have to find the atleast one row which neither contain the maximum or the 
+minimum element among all the elements present . The runtime complexity should be less than O(N^2) .
+
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/neither-max-nor-min/
+
+
+
+//********************************//
+Q.92:
+You are given a matrix M[n, n] for a tree with n nodes. In the given matrix M, M[i, j] is 
+true iff node j is an ancestor of node i. Construct the tree from the given matrix.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/construct-tree-from-ancestor-matrix-2/
+
+
+
+
+//********************************//
+Q.93:
+Given a matrix you have to find the shortest path from one point to another within the matrix. 
+The cost of path is all the matrix entries on the way. You can move in any direction (up, down, left, right, diagonally)
+
+e.g.
+
+5 9 10 1
+
+3 7 4 4
+
+8 2 1 9
+
+So shortes path from (0,0) to (2,2) is (0,0)–(1,1)—(2,2). Path cost – 5+7+1 = 13
+
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-38/
+
+
+
+//********************************//
+Q.94:
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-22/
+
+
+
+
+//********************************//
+Q.95:
+Given two arrays of numbers, find if each of the two arrays have the same
+
+set of ntegers ? Suggest an algo which can run faster than NlogN without
+
+extra space?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-29/
+
+
+//********************************//
+Q.96:
+There are 2 tables with 16 and 60 tuples respectively. Column A in table 1 is its primary key, 
+whereas Column A in table 2 is the foreign key referring to table 1. Now find out the Minimum and 
+Maximum number of tuples that are possible due to a natural join.
+
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-terminology-10/
+//********************************//
+Q.97:
+Sort an array of n positive integers containing n/2 sorted integers in first and second-half? in O(n) time complexity
+
+and space complexity should be constant
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-36/
+
+
+//********************************//
+Q.98:
+LOG problem.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-37/
+
+
+//********************************//
+Q.99:
+an amazon own alogo for sorting in which u only have to swap and cost of algo is the no. which is swapped 
+they said that for example u have array of 7,1,2,3 if u move 7 at the end ur 
+cost will be 7 and if u move 1,2,3 seperately then ur cost will be 6 so u should return 6
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-35/
+
+
+//********************************//
+Q.100:
+Find the two numbers whose difference is minimum among the set of numbers.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-arrays-43/
+
+
+//********************************//
+Q.100:
+
+
+
+//********************************//
+Q.100:
+
+
+
+//********************************//
+Q.100:
+
+
+
+//********************************//
+Q.100:
+
+
+
+//********************************//
+Q.100:
+
+
+
+//********************************//
+Q.100:
+
+
+
+//********************************//
+Q.100:
+
+
+
+
+//********************************//
+Q.100:
+
+
+
+
+//********************************//
+Q.100:
