@@ -12,12 +12,31 @@ For example:
 
 //********************************//
 Q.2: Find the preorder traversal of the binary tree node?
+SOLU:  Algorithm:
+     A) If current node has left child then return that node.
+     B) ELSE IF Current node has right child then this node.
+     C) Otherwise if the current node is leaf node  then . point the curent node with the parent node. And keep 
+     poiniting the parent node of that node until it's the right child of the parent node. And return the right child
+     of the parent node when the node becomes the left child od the parent node.
+
+
+
 
 //*******************************//
 Q.3:There is an integer array consisting positive and negative integers. Find maximum positive difference S defined as:
-S = a - a[j] where i>j
+S = a[i] - a[j] where i>j
 and
 S > 0
+
+SOLU:: A). If S = a[i] - a[j] where i>j (conditiion i>j is not given then):  We would find the max and min element from 
+the  array and the difference of them would be the maximum integer value i.e. it would be the final answer.
+
+    B) We would traverse the array and keep the min element till the index as well as the difference of the current
+value to the min element. If current element is minimum than min element than update the value of min element with the
+current value and also check that current answer is max than difference between the current element and min element. 
+
+
+
 
 //********************************//
 Q.4:An external system has an array. You are given 3 inbuilt functions which perform their operation in O(1) time.
@@ -37,7 +56,9 @@ Given an array of n elements and an integer k where k<n.
 
 Elements {a[0]…..a[k] and a[k+1]…..a[n] are already sorted. Give an algorithm to sort in O(n) time and O(1) space.
 
-SOLU: you can use an in place merge algo http://thomas.baudel.name/Visualisation/VisuTri/inplacestablesort.html
+SOLU: A).you can use an in place merge algo http://thomas.baudel.name/Visualisation/VisuTri/inplacestablesort.html
+      B). We need to apply the inplace merge sort for the above problem.The above given link specify the algorithm
+      for Inplace merge for two sotred sequence, which used by the STL containers of the C++/Java.   
 
 
 //********************************//
@@ -46,11 +67,15 @@ you have two BST , they contain the same amount of elements “N” but there st
 cross check that the trees are identical with complexity O(N). Also how will you do the same in case its only 
 Binary tree and not a Binary search tree.
 
+SOLU: Just traverse the both BST's and keep track of the XOR of all element . If the resultant XOR's value is zero 
+    then both having the same value othervise different value..
+
 
 
 //********************************//
 Q.7:
 Given a graph’s shortest path algorithm, how can you make use of it to find the second shortest path?
+
 SOLU:
 Let s be the source and d be the destination node in the graph G.
 
@@ -70,9 +95,10 @@ b) Add the broken link back.
 
 
 //********************************//
-Q.8:I was recently asked this question during my second phone screen for amazon. Given an array containing only 0s and 1s, find the minimum size of subarray containing exactly k-zeros.
+Q.8:I was recently asked this question during my second phone screen for amazon. Given an array containing only 0s 
+and 1s, find the minimum size of subarray containing exactly k-zeros.
 
-Ex. 11010100011
+Ex. 11010100011 and k=4.
 
 result = 5(01000)
 
@@ -80,6 +106,10 @@ I was able to give an O(n^2) solution but couldn’t do better. Any ideas for a 
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-phone-screen/
 
+SOLU::  A) Similar to finding the minimum Size Window in a string that contains the every elemnt present in the defferent
+        given string.  EX: str1="11010100011"  and str2="0000"(No of exatctly k-Zeros).
+        B)Traverse the array and keep counting of the No of zero's and If it is greater than or equal than No of K-XZero's
+        slide the window from the left to right and keep update the value of the variable having minimum window size.
 
 
 //********************************//
@@ -90,6 +120,7 @@ For example, seq1 = “ABCDEFG”, seq2 = “DBCAPFG”, then the max window is 
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-strings-15/
 
+SOLU: 
 
 
 //********************************//
@@ -109,6 +140,12 @@ Note that the array doesn’t contain any 0.
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/find-the-first-subarray-with-zero-sum/
 
+SOLU: Traverse the array and keep the cumulative sum upto that index of the array to the array current index of the 
+    array. Then again start traversing the array :
+    A) If we found ZERO then array having the subarray sum as Zero from the starting of the array till that index.
+    B) ELSEIF  find those two index in the cumulative sum  array , where the values are equall, the index2 and
+    index-1 will be the subarry having the sum value as Zero.
+
 
 
 //********************************//
@@ -123,10 +160,15 @@ For 2. No idea
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-qiestion/
 
+SOLU: 1). We need to use the Hash. where <key,Value> will be the element in tha array and Value will be the Adderss of 
+      node in LinkList, which is used to store the first unique integer in the array. Where Head of LINKEDLIST always
+      point to the first unique integer of the array . If the element of array getting repeated the remove it from
+      the LINKEDLIST.
+
 
 
 //********************************//
-Q.13:
+Q.13:(PUZZLE)
 There are some glasses with equal volume 1 litre. The glasses kept as follows
 
 1
@@ -163,7 +205,9 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-s
 //********************************//
 Q.15:
 suggest a data structure for jigsaw puzzle
+JIGSAW:(a puzzle made of many small pieces that are cut into various shapes and can be fit together to form a picture)
 
+SOLU:::
 
 //********************************//
 Q.16:
@@ -171,7 +215,6 @@ In how many ways 3 identical coins can be placed in 5×5 grid so that no two coi
 
 SOLU:
 its = 25*16*9/25*24*23
-I  guess zombie is right.
 
 there are 25 cells, suppose you select one of them by 25 chances
 
@@ -186,7 +229,7 @@ Round5 | Q2 : Suppose, Amazon have a Logging system Like This:
 
 They Track all logs daily basis, stored in separate log file.Log contains a collection of tuples of Customer ID and Page ID. 
 The length of Customer ID and Page ID is L1 and L2. 
-Suppose We have a log of D-days , and size of each log fine can be Order of n , where n be the number of customer.
+Suppose We have a log of D-days , and size of each log file can be Order of n , where n be the number of customer.
 
 In a most generalized situation, you can assume that a customer can visit the same page multiple times in a day or any number of days.
 
@@ -211,6 +254,9 @@ will have to reach Matrix[M-1][N-1]. It can jump any step in one go [ 1, 2, ....
 Each difficulty value is positive. Write code to give path trace for frog.
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/write-a-program-to-find-path-with-minimu-difficulty-in-mxn-matrix/
+
+SOLU: Variation of DP OF (Collecting maximum apple in a 2-D Matrix .) . I need to take the 3-D Array for storing the 
+      state as DP.
 
 
 //********************************//
