@@ -404,6 +404,347 @@ LINK:::SET-6
 
 
 //********************************//
+Q.31:
+Algorithm to find the two numbers whose difference is minimum among the set of numbers.
+
+For example the sequence is 5, 13, 7, 0, 10, 20, 1, 15, 4, 19
+
+The algorithm should return min diff = 20-19 = 1.
+
+Constraint – Time Complexity O(N) & Space is not a constraint [upto O(3N)]
+
+Assumption – Sorting O(nlogn) & comparison of adjacent numbers is already known & is not an option. 
+Try to keep it linear 
+
+LINK::: 
+http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-70/
+
+
+//********************************//
+Q.32:
+You have been given a Two Dimensional Array and One Dimensional Array.. You have to return true if 2D array consists of given 1D Array… 2D array Consists of 1D array means all the elements of 1d are present contiguously
+ in left side, right side ,in up or in down directions in 2d array.. 
+ 
+ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-arrays-9/
+ 
+ 
+//********************************//
+Q.33:
+Given two log files, each with a billion usernames (each username appended to the log file), find the usernames existing in both documents in the most efficient manner? Use pseudo-code or code. If your code calls pre-existing library functions, create each library function from scratch 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-19/
+
+
+//********************************//
+Q.34:
+Find all the patterns which are present in the character array given. A pattern is a sub-array containing 2 or more chars and is having a frequency of more than one.
+
+Example:
+
+i/p: aabcdadabc
+
+o/p: ab, abc, bc, da
+
+basically what we have to search is those sub-string(s) of length 2 or more which repeats itself(not necessarily twice, but ‘n’ number of times). In the above example ‘ab’ has been highlighted with red in order to make it clear.
+
+Another example:
+
+i/p : fghjerhjfgjefgh
+
+o/p: fg, je , hj, fgh 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-strings-11/
+
+
+
+//********************************//
+Q.35:
+Given a list of words and a list of search words Find the smallest sub list which has all the search words 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-107/
+
+
+
+//********************************//
+Q.36:
+How to store a set of numbers so that we can get the most popular number at any time. Numbers may be added and deleted from the set. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-21/
+
+ 
+ 
+//********************************//
+Q.37:
+We have a file containing all product IDs. Write a code to retrieve all the Unique IDs that start with ‘b’ and doesn’t have any special characters in it. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-129/
+
+
+//********************************//
+Q.38:
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-7/
+
+
+
+//********************************//
+Q.39:
+Find out the smallest segment in a document containing all the given words.
+
+Desired Complexity is O nlogK ..n is the total no of words in the document and k is the number of input words 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-43/
+
+
+
+//********************************//
+Q.40:
+Given a string tell whether its a valid passwd or not.
+
+Other rules are simple but the third one is tricky:
+
+* the string should not have the same substring following each other
+
+ex:
+
+stringstring is incorrect
+
+strin123strin is correct
+
+Any suggestions on how to approach the above rule? 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-password-checker/
+
+
+//********************************//
+Q.41:
+You are given three arrays A,B and C. You have to find out all the elements in A and B such that the A-B[j]=C[k]
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-12/
+
+
+//********************************//
+Q.42:
+Given a binary string. Move all 0s at the beginning and all 1s at the end. Only the adjacent elements can be swapped.
+
+010101 should be converted to 000111
+
+001100 should be converted to 000011 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-11/
+
+
+
+//********************************//
+Q.43:
+There is an array of length n having numbers from 1-10 . what is the probability to choose a number and chosen number is 10
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-aptitiude-3/
+
+
+//********************************//
+Q.44:
+Find the same sum interval in two Binary arrays:
+
+Given two binary arrays A and B of same size N. Find an interval (i, j)(inclusive) such that sum of elements of A and sum of all elements of B in this interval is same. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-10/
+
+
+//********************************//
+Q.45:
+There is a binary tree(Not a BST) in which you are given three nodes
+
+x,y,z. Write a function which finds whether y lies in the path b/w x
+
+and z. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-trees-40/
+
+
+
+//********************************//
+Q.46:
+An array A[1...n] contains all the integers from 0 to n except for one number which is missing. In this problem, we cannot access an entire integer in A with a single operation. The elements of A are represented in binary, and the only operation we can use to access them is “fetch the jth bit of A”, which takes constant time. Write code to find the missing integer. Can you do it in O(n) time?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-bit-magic/
+
+
+
+//********************************//
+Q.47:
+You are given n no. of lines in form of Ax + By = C, basically you are given A, b and C for line “i”.
+
+Lines are given in a way such that 0 <= x <= 1 and y < y[i+1] for same X.
+
+Also, one point (x,y) is given too. Find out the two closest lines to the point such that the point is between them.
+
+Given: n – no. of lines
+
+a b c – i th line.
+
+X Y – Point
+
+Output
+
+A B C
+
+A[j] B[j] C[j]
+
+such that the point X,Y is between them.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-41/
+
+
+
+//********************************//
+Q.48:
+for a given file(80 column and 100 lines) find in how many lines a word occur. the answer is like:
+
+“the” in line 5,8,23.
+
+“name” in line 45,23…
+
+for all the words. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-131/
+
+
+//********************************//
+Q.49:  Lot of Qusetinos. 
+http://www.geeksforgeeks.org/forums/topic/amazon-hyderabad-interview-question/
+
+
+
+//********************************//
+Q.50:
+Converting decimal to roman.
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-hyderabad-online-written/
+
+
+//********************************//
+Q.51:http://www.geeksforgeeks.org/forums/topic/find-a-pair-in-a-sequence-whose-sum-is-another-element-of-the-same-sequence-5/
+For example if array is [1, 4, 3, 14, 24, 30 ] then your program shoul be able to find out 1 and 3 as sum of them is present in array.
+LINK:::
+
+
+
+//********************************//
+Q.52:
+If pairwise sums of ‘n’ numbers are given in non-decreasing order
+
+identify the individual numbers. If the sum is corrupted print -1
+
+Example:
+
+i/p:
+
+4
+
+4 5 7 10 12 13
+
+o/p:
+
+1 3 4 9 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-43/
+
+
+
+
+//********************************//
+Q.53:
+Given an array-based heap on n elements and a real number x, efficiently determine whether the kth smallest element in the heap is greater than or equal to x. Your algorithm should be O(k) in the worst-case, independent of the size of the heap. 
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-24/
+
+
+
+
+//********************************//
+Q.54:
+You have a digital clock having 24 hr format of HH:MM:SS. You have to find following probabilities:
+
+1- Occurence of a particular value(let say 05) in SS
+
+2- As 1st point we have to find probabilities for particular value in hour and minute fields.
+
+3- probalities for other combinations(particular HH:SS or MM:SS values)
+
+You have to answer the probability in terms of digits occurence…for example in the second’s field.. at unit place 10 digits(0-9) are possible, and in the tens place 6 digits are possible (0-5)
+
+It is not a very straight forward problem. Many different scenarios are possible(value in the seconds field will change in every 1 min, on the other hand, the value in the hour field will remain same till 60 min)
+
+Please don’t answer ur probabilty in terms of time(as 1/60, 1/24*60) rather in terms of digits only as described above
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-data-structure-13/
+
+
+
+//********************************//
+Q.55:
+In a university, students can enroll in different courses. A student may enroll for more than one course. Both students and courses can be identified by IDs given to them. Design a data structure to store students, courses, and the student-course relationships. You can use arrays, lists, stacks, trees, graphs, etc. or come up with your own data structures. Give the running times, in Big O notation, for the following operations for your data structure and justify the answers: a) Return all students in a list. b) Return all courses in a list. c) Return all courses in a list for a given student. d) Return all students in a list for a given course
+
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-39/
+
+
+
+//********************************//
+Q.56:
+//********************************//
+Q.57:
+//********************************//
+Q.58:
+//********************************//
+Q.59:
+//********************************//
+Q.60:
+//********************************//
+Q.61:
+//********************************//
+Q.62:
+//********************************//
+Q.63:
+//********************************//
+Q.64:
+//********************************//
+Q.65:
+//********************************//
+Q.66:
+//********************************//
+Q.67:
+//********************************//
+Q.68:
+//********************************//
+Q.69:
+//********************************//
+Q.70:
+//********************************//
+Q.71:
+//********************************//
+Q.72:
+//********************************//
+Q.73:
+//********************************//
+Q.74:
+//********************************//
+Q.75:
+//********************************//
+Q.76:
+//********************************//
+Q.77:
+//********************************//
+Q.78:
+//********************************//
+Q.79:
+//********************************//
+Q.80:
+//********************************//
+Q.81:
+//********************************//
+Q.82:
+
+
+//********************************//
 Q.83:
 If pairwise sums of ‘n’ numbers are given in non-decreasing order
 
