@@ -490,7 +490,6 @@ Example:
 i/p: aabcdadabc
 
 o/p: ab, abc, bc, da
-
 basically what we have to search is those sub-string(s) of length 2 or more which repeats itself(not necessarily twice, but ‘n’ number of times). In the above example ‘ab’ has been highlighted with red in order to make it clear.
 
 Another example:
@@ -501,6 +500,7 @@ o/p: fg, je , hj, fgh
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-strings-11/
 
+SOLU: Apply the Suffix Array Data structure and at each step check that whether it's following the given 		criteria or not. 
 
 
 //********************************//
@@ -509,6 +509,7 @@ Given a list of words and a list of search words Find the smallest sub list whic
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-107/
 
+SOLU: I think solution is similar to the Minimum window in a string which contains the all characters of other string. 
 
 
 //********************************//
@@ -516,6 +517,8 @@ Q.36:
 How to store a set of numbers so that we can get the most popular number at any time. Numbers may be added and deleted from the set. 
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-21/
+
+SOLU: Use the Heap Data structure for storing he set element. 
 
  
  
@@ -525,6 +528,7 @@ We have a file containing all product IDs. Write a code to retrieve all the Uniq
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-129/
 
+SOLU: Use Trie Data structure for storing the Product IDs.
 
 //********************************//
 Q.38:
@@ -539,6 +543,9 @@ Find out the smallest segment in a document containing all the given words.
 Desired Complexity is O nlogK ..n is the total no of words in the document and k is the number of input words 
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-43/
+
+SOLU: This is also the variation of smallest Window of string containg the all characters f the Other string.
+      We will build the Balanced tree of K given Input words and then try to process, the whole document containing n words in it. 
 
 
 
@@ -563,7 +570,7 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-passw
 
 //********************************//
 Q.41:
-You are given three arrays A,B and C. You have to find out all the elements in A and B such that the A-B[j]=C[k]
+You are given three arrays A,B and C. You have to find out all the elements in A and B such that the A[i]-B[j]=C[k]
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-12/
 
