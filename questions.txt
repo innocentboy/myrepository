@@ -67,8 +67,7 @@ you have two BST , they contain the same amount of elements “N” but there st
 cross check that the trees are identical with complexity O(N). Also how will you do the same in case its only 
 Binary tree and not a Binary search tree.
 
-SOLU: Just traverse the both BST's and keep track of the XOR of all element . If the resultant XOR's value is zero 
-    then both having the same value othervise different value..
+SOLU:
 
 
 
@@ -957,7 +956,8 @@ extra space?
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-29/
 
-SOLU: Take the XOR of two the elements of the both array , if the resultant value is ZERO then both have same set of numbers otherwise different set of numbers.
+SOLU:
+
 
 //********************************//
 Q.96:
@@ -1185,6 +1185,9 @@ then the minimum distance between X and Y is 1 (X=12,Y=14 OR X=16,Y=14).
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-36/
 
+SOLU: Pick each element from the first array and apply the binary search on array Y and update the min variable which
+      keep the minimum distance between words.
+
 
 //********************************//
 Q.122:
@@ -1244,6 +1247,7 @@ and ask whether the first person knows the second one. How will you find the cel
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-76/
 
+SOLU: Solution given on geeksforgeeks.
 
 //********************************//
 Q.128:
@@ -1260,7 +1264,8 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-s
 
 //********************************//
 Q.129:
-You are given some 1000000 numbers in the range of 1 to 1000000000 not in any sorted order.The given numbers are random. You need to eliminate the duplicates in the given set of numbers. 
+You are given some 1000000 numbers in the range of 1 to 1000000000 not in any sorted order.The given numbers are random.
+You need to eliminate the duplicates in the given set of numbers. 
 Consider for optimized solution
 
 
@@ -1294,6 +1299,9 @@ or more similarity with the given keyword ie “foo” Write the most efficient 
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-74/
 
+SOLU: Use algorithm which tells minimum no. of Insertion,deletion or Swaping required to convert a string to another
+     string. From that compare with the length of "foo" to find out the similarity % of that word with "foo". On the
+     basis of that we will consider that word to be the part of search result.
 
 //********************************//
 Q.134:
@@ -1360,6 +1368,8 @@ customer names in three files.
 
 LINK:::
 
+SOLU: Use Trie Data structure for finding the commomn names of customers present in three files.
+
 //********************************//
 Q.142:
 Given a binary tree and a number N, check is there any path exists in the tree such sum of the nodes in the 
@@ -1389,6 +1399,10 @@ given a set of N points where each point is represented as a combination of x an
 sets of collinear points such that set size is more than or equal to 3.
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-algorithms-10/
+
+SOLU:  A) http://www.codechef.com/problems/CB04 : This is question link for the solution link taht is given below. 
+       B)http://www.codechef.com/viewsolution/453522 . This is codechef link for the solution. But the solution is for
+       some different problem. In which we need to find the set of maximum No of points that are collienear.
 
 //********************************//
 Q.146:
@@ -1430,3 +1444,22 @@ Q.150:
 
 //********************************//
 Q.151:
+
+
+
+//********************************************************************************//
+//###############################################################################//
+                                   QUESTIONS
+//*******************************************************************************//
+//###############################################################################//
+STRING::   1. http://discuss.codechef.com/questions/7697/tastr-editorial
+           2. http://discuss.codechef.com/questions/18105/mou1h-editorial
+           3. http://discuss.codechef.com/questions/18264/tasuffix-editorial
+
+ARRAY:     1.http://discuss.codechef.com/questions/28737/johny-editorial
+
+
+//********************************************************************************//
+//###############################################################################//
+//*******************************************************************************//
+MATH  LINK:::  http://www.mathworks.in/help/matlab/ref/unique.html
