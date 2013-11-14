@@ -574,6 +574,8 @@ You are given three arrays A,B and C. You have to find out all the elements in A
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-12/
 
+SOLU: Similar to two sum problem.
+
 
 //********************************//
 Q.42:
@@ -585,6 +587,7 @@ Given a binary string. Move all 0s at the beginning and all 1s at the end. Only 
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-11/
 
+SOLU: Looping and just swaping the adjacent element until we are getting the final answer.
 
 
 //********************************//
@@ -593,6 +596,8 @@ There is an array of length n having numbers from 1-10 . what is the probability
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-aptitiude-3/
 
+SOLU: Probability of not choosing 10: 9/10;
+      Probability of getting 10 is: 1-(probabilty of not choosing 10) :1-9/10:1/10 
 
 //********************************//
 Q.44:
@@ -602,6 +607,7 @@ Given two binary arrays A and B of same size N. Find an interval (i, j)(inclusiv
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-10/
 
+SOLU:
 
 //********************************//
 Q.45:
@@ -613,6 +619,7 @@ and z.
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-trees-40/
 
+SOLU: Finding the LCA of node X and Z. Then check whether Y is in the path from LCA node to X node or LCA node to Z node the return true otherwise return false.
 
 
 //********************************//
