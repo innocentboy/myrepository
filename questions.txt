@@ -49,6 +49,10 @@ c) reverse(i, j): reverses elements of subarray starting from i and ending with 
 
 write function sortArray() using these three functions.
 
+SOLU: A) Similar to Bubble Sort. Instead of swaping the element we use reverse(i,j) build in given function for swaping
+        the element. 
+      B) Like Pancake sorting.   
+
 
 //********************************//
 Q.5:
