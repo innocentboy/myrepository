@@ -957,6 +957,7 @@ extra space?
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-29/
 
+SOLU: Take the XOR of two the elements of the both array , if the resultant value is ZERO then both have same set of numbers otherwise different set of numbers.
 
 //********************************//
 Q.96:
@@ -974,6 +975,7 @@ and space complexity should be constant
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-36/
 
+SOLU: Use the inplace merge sort used by STL containars of C++/JAVA.
 
 //********************************//
 Q.98:
@@ -984,7 +986,7 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-s
 
 //********************************//
 Q.99:
-an amazon own alogo for sorting in which u only have to swap and cost of algo is the no. which is swapped 
+an amazon own algo for sorting in which u only have to swap and cost of algo is the no. which is swapped 
 they said that for example u have array of 7,1,2,3 if u move 7 at the end ur 
 cost will be 7 and if u move 1,2,3 seperately then ur cost will be 6 so u should return 6
 
@@ -996,6 +998,7 @@ Q.100:
 Find the two numbers whose difference is minimum among the set of numbers.
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-arrays-43/
+SOLU: This is variation of finding the two closest point pair in One-Dimention.
 
 
 //********************************//
@@ -1040,6 +1043,8 @@ the number of elements in the array having values between and including i and j.
 
 LINK:::w-question-for-software-engineerdeveloper-about-arrays-14/
 
+SOLU: USE segment tree.(There is another version which preprocess in nlogn time , answers the query in o(1).)
+
 //********************************//
 Q.106:
 given two rectangles, how would you find out whether one rectangle lies inside another?
@@ -1059,6 +1064,7 @@ a[p]+a[p+1]….+a[q] = b[p]+b[p+1]….+b[q]
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-arrays-33/
 
+SOLU: This question is same as given above.
 
 //********************************//
 Q.108:
@@ -1100,7 +1106,7 @@ eg:
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-23/
 
-
+SOLU: Use recusion and store the resultant value of integers in the set.s
 
 //********************************//
 Q.112:
@@ -1121,12 +1127,17 @@ Implement auto calling functionality of the mobile phone(T9)
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-data-struc-2/
 
+SOLU: What is auto calling functionality?
+
 //********************************//
 Q.115:
 given a list of words …you have infinite pre-processing time.Now you are given a word…output all the words from 
 the dictionary that are anagram of this word as efficiently as possible.
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-strings-4/
+
+SOLU: A).First sort the word of list and use it as the KEY in hash, and insert it's value as VALUE in the HASH.
+      B).First sort the word and the use try t store it , when that word exhausted at the leaf node append all the words in the format of linked list.s
 
 //********************************//
 Q.116:
@@ -1140,6 +1151,7 @@ i.e., x + y +z =0. Where x belongs to A, y to B[] and z to C[].
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-arrays-22/
 
+SOLU: Variation of three sum problem.
 
 //********************************//
 Q.118:
@@ -1156,6 +1168,7 @@ functions to support addition and subtraction.
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher/
 
+SOLU: I think TRIE should be used for storing integers.
 
 //********************************//
 Q.120:
