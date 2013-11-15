@@ -171,41 +171,170 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/find-if-route-exists-between-gi
 
 //#################################################//
 Q.:16
+An old MS question:
 
+You have an abstract computer, so just forget everything you know about computers, this one only does what i’m 
+about to tell you it does. You can use as many variable as you need, there are no negative numbers, all numbers 
+are integers. You do not know the size of the integers, they could be infinitely large, so you can’t count on 
+truncating at any point. There are NO comparisons allowed, no if statements or anything like that. There are only 
+four operations you can do on a variable.
+
+a) You can set a variable to 0.
+
+b) You can set a variable = another variable.
+
+c) You can increment a variable(only by 1), and its a post increment.
+
+d) You can loop. So, if you were to say loop(v1) and v1 = 10, your loop would execute 10 times, but the value
+in v1 wouldn’t change so the first line in the loop can change value of v1 without chaning the no of times you loop. 
+You need to do 2 things.
+
+(i) Write a function that decrements by 1.
+
+(ii) Write a function that subtracts one variable from another.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-44/
 
 
 //#################################################//
 Q.:17
+Given an expression remove the unnecessary brackets in it with out creating an ambiguity in its execution.
+
+input output
+
+ex1: (a+(b)+c) a+b+c
+
+ex2: (a*b)+c a*b+c
+
+Please reply as early as possible….
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/ms-interview-question-6/
+
 
 //#################################################//
 Q.:18
+convert a double-precision number to rational, i.e.:
+
+0.125 -> 1/8
+
+don’t care about arithmetic overflow
+
+SOLU:For 0.125 consider a=125 and b=1000. Now find GCD of a and b.
+
+And divide both a and b by the GCD.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-29/
+
 
 //#################################################//
 Q.:19
+Given a string S of words and no of character per line m, with m being greater than the longest word in S, 
+print S in a set of lines so that each line contains no more than m characters and no word split between 2 lines.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-0-2-years-about-strings-5/
 
 //#################################################//
 Q.:20
+can we fit 8 numbers (1 to  in 2X4 matrix such that any element in any cell should not adjacent or 
+diagonal to next or previous element
+
+EX: 1 2 – - –>invalid
+
+EX: 1 6 7 4–>invalid
+
+2 – - -
+
+EX: 1 4 7 3 —>invalid
+
+- 2 – -
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-0-2-years-about-puzzle/
+
+
 
 //#################################################//
 Q.:21
+Write a function that deletes consecutive identical character sets of size 1, 2, 3. For example if aabbabc 
+is given as input after first iteration, it should be ababc and after that it should become abc. if aabbcabc 
+is given it should 
+give abcabc after first interation, no change in second iteration and abc after third iteration.
+
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-strings-6/
 
 //#################################################//
 Q.:22
+Segregate positive and negative nos in array without changing order
+
+*No extra space (can use one extra space)-O(1) max
+
+*No order change allowed
+
+example:
+
+input : 1,-5,2,10,-100,-2
+
+output: -5,-10,-100,1,2
+
+input : -1,-5,10,11,15,-500,200,-10
+
+output : -1,-5,-10,-500,-10,10,11,15
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-9/
+
 
 //#################################################//
 Q.:23
+An array is given eg. b4a0c
+
+This represents a linked list with head a .
+
+next node is in the index 0 (bcoz 0 is next a in the array)
+
+so second node is b.
+
+b’s next node is in index 4 (bcoz 4 is next to b in the array)
+
+so third node is c. this is the last node bcoz its next index in array contains NULL
+
+therefore the linked list is a->b->c
+
+Note: a is the head bcoz its index(2) is not present in the array
+
+Give an efficient algorithm to convert the array to linked list
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/array-to-linked-list-tricky/
+
 
 //#################################################//
 Q.:24
+Given a binary search tree and a node ‘n’ ,
+
+use an efficient algorithm to find the left most node that appears in the same level as the given node ‘n’
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/left-most-node-in-a-level/
+
 
 //#################################################//
 Q.:25
+Given a string, u need to print all cases of letters without changing the order
+
+eg:-
+
+ABC,Abc,ABc,aBC,abC etc………..
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-25/
+
 
 //#################################################//
-Q.:26
+Q.:26 ::OS
+http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-0-2-years-4/
+
 
 //#################################################//
 Q.:27
+
+
 
 //#################################################//
 Q.:28
