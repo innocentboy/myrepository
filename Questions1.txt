@@ -3,52 +3,176 @@
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&                        
 //#################################################//
 Q.:1
+Given a 2 D array. The rows and columns are sorted.
+
+Find the kth largest element from the 2-d array in most efficient way. Can it be done in-place?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/find-kth-largest-element-from-a-2-d-sorted-array/
 
 //#################################################//
 Q.:2
+Given a set of numbers from 1 to n^2, generate subsets consisting of n numbers such that each subset has one and 
+only one matching number from any other subset
 
+The max number of sub-sets is n squared + n
+
+An example is as follows:
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/ms-interview-question-2/
 
 //#################################################//
 Q.:3
+Given 2 unsorted integer arrays a and b of equal size. Determine if b is a
+
+permutation of a. Can this be done in O(n) time and O(1) space ?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/ms-interview-question-4/
 
 //#################################################//
 Q.:4
+Given a string find the longest substring whose characters are continuous.
+
+Input : “owadcbjkl”
+
+Output: “adcb
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-11/
+
 
 //#################################################//
 Q.:5
+Consider the Fibonacci Seies 1, 2, 3, 5, 8, 13…..
+
+Now consider a Fibonacci binary number system of numbers where numbers are considered as sum of Fibonacci numbers
+
+Ex. 10 can be written as 8+2=>10010 and 17 can be written as 13+3+1 => 100101. This representation is similar to binary
+representation. Instead of powers of 2, Fibonacci numbers are used.
+
+The question was, given n find all possible representations of n in Fibonacci binary number system.
+
+as 10=8+2=>10010
+
+also 10=5+3+2=>1110
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-26/
 
 //#################################################//
 Q.:6
 
+Given an array, sort the array in such a way that the first part of the sorted array contains odd numbers, and 
+the second part contains even numbers. The first part has to be sorted in descending order and the second part in 
+ascending order.
+Not extra array, no pre or post processing and it has to use a conventional sorting mechanism.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-2/
+
+
 //#################################################//
 Q.:7
+Given a file which has many functions(c file including main),
+
+write an algorithm with necessary data structures to list functions which are unused when the code is executed from main.
+
+SOLU:We can solve it using graphs. We can consider every function as a vertex (or Node) of graph.
+
+First scan the file and create a node for every function.
+
+Now trace function calls starting from main(), when a function is called, make an edge from caller to callee.
+
+Finally, find all nodes which are not reachable from node of function main().
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-find-unused-functions-in-a-file/
 
 //#################################################//
 Q.:8
+Given an n-ary tree. requirement it to convert the elements in such a manner that every parent is median of itschildren.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-trees-25/
+
 
 //#################################################//
 Q.:9
 
+Given a rectangle with known width and height, design an algorithms to fill the rectangle using n 
+squares(n is integer, also given) and make sure in the result the wasting area is minimized. Length of square
+doesn’t have to be integer.
+I.e, given width=3,height=2,n=5, one solution is that rectangle can be filled with five 1×1 squares and the wasting area is 1. Another solution could be filled with five 0.9×0.9 squares, 
+but the wasting area is more than first solution.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/fill-the-rectangle-with-minimization-in-the-wastage-of-area/
+
 //#################################################//
 Q.:10
+Give a good data structure for having n queues ( n not fixed) in a finite memory segment. You can have some 
+data-structure separate 
+for each queue. Try to use at least 90% of the memory space
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-data-structure-7/
 
 //#################################################//
 Q.:11
+Pairs of primes separated by a single number are called prime pairs. Examples are 17 and 19. Prove that the number 
+between a prime pair is always divisible by 6.
+
+SOLU:The number between the prime pair:
+
+(1) Has to be even, since the primes have to be odd
+
+(2) Has to be divisible by 3 since we have three sequential numbers, so one of them has to be divisible by 3,
+and the other numbers are prime.
+
+Since it has to be divisible by both 2 and 3, it is divisible by 2*3=6.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-puzzle-4/
 
 //#################################################//
 Q.:12
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-qusetions-2013-batch/
+
 
 //#################################################//
 Q.:13
+You are given a file copy function ..e.g cp command.
+
+Write test cases for the copy program.
+
+SOLU:Case 1: First file doesn’t exist
+
+Case 2: First file is not accessible due to permissions
+
+Case 3 & 4: Same as cases 1 and 2 for second file
+
+Case 5: First file is empty
+
+Case 6: Second file is empty
+
+Case 7: Second file is not empty
+
+….. and more
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/test-cases-for-copy/
+
 
 //#################################################//
 Q.:14
+Suppose there are two metro stations A and B .Between A and B traffic congestion is the highest.
+
+Suggest a way to reduce the congestion.
+
+SOLU: Variation of MAX FLOW
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/traffic-congestion-puzzle/
+
 
 //#################################################//
 Q.:15
+LINK:::http://www.geeksforgeeks.org/forums/topic/find-if-route-exists-between-given-two-cities/
+
 
 //#################################################//
 Q.:16
+
+
 
 //#################################################//
 Q.:17
