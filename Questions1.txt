@@ -333,11 +333,20 @@ http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-softw
 
 //#################################################//
 Q.:27
+Your mobile shows the current location using longitude and latitude.
 
+Design a solution to find the nearest city.
+
+You have a data structure of the locations of all the cities on earth.How do you 
+represent this data structure efficiently so as to find the nearest city?
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-find-the-nearest-city-to-a-given-location/
 
 
 //#################################################//
 Q.:28
+
+
 
 //#################################################//
 Q.:29
