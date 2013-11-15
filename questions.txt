@@ -1,3 +1,5 @@
+//// usaco programming
+
 Q.1: You are given an array of positive integers. Convert it to a sorted array with minimum cost (minimum number of operations). Only valid operation are
 
 1) Decrement -> cost = 1
