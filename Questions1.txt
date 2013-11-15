@@ -344,18 +344,46 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-find-the-ne
 
 
 //#################################################//
-Q.:28
-
+Q.:28  PUZZLE
+http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-puzzle-13/
 
 
 //#################################################//
 Q.:29
+You have a array of int. Elements of the array are in sequential order. For example, {0,1,2,3}, {0,1,2,3,4,5}. 
+Now, you have given an array and only one sequence is missing. How will you determine 
+which sequence number is missing. {0,1,2,4,5,6}, Here 3 is missing. An time efficient algorithm is required.
+
+SOLU: A). You can apply the merge between to array to get the missing number.
+      B). You can use the XOR also to get the missing number.
+
 
 //#################################################//
 Q.:30
+In a matrix of characters, find an string. String can be in any way (all 8 neighbors to be considered), 
+like find Microsoft in below matrix.
+
+A-C-P-R-C
+
+X-S-O-P-C
+
+V-O-V-N-I
+
+W-G-F-M-N
+
+Q-A-T-I-T
+
+String Microsoft is present in the matrix above ?
+
+There also a slight variation where a diagonal neighbor is not considered.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/find-a-string-inside-a-2-dimensional-array/
+
 
 //#################################################//
 Q.:31
+
+
 
 //#################################################//
 Q.:32
