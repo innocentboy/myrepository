@@ -382,64 +382,496 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/find-a-string-inside-a-2-dimens
 
 //#################################################//
 Q.:31
-
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-data-structure-3/
 
 
 //#################################################//
 Q.:32
+Let “E:dir1dir2….dir3page.html” be the file required. Here “.. “ tells us that we should move one directory to the back.So the final output should be “E:dir3page.html”. So write code for this covering all end conditions and do this in place if input is given in
+
+an array. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-arrays-9/
 
 //#################################################//
 Q.:33
+Write a routine to draw a circle (x ** 2 + y ** 2 = r ** 2) without making use of any floating point computations at all 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-about-algorithms-5/
+
 
 //#################################################//
 Q.:34
+Write a C code to find Leftmost right cousin at the same level.
+
+SOLU: Do the Level Order traversal and find the second node present in the Queue at that level of queue.
+
 
 //#################################################//
 Q.:35
+find the number of solutions (non-negative integral) for the equation x1+x2+x3+x4+x5=20.
+
+ie, #((0,0,0,0,20),(0,0,0,20,0),….).
+
+Answer not needed.Any efficient approach would be appreciated. 
+
+SOLU:  http://www.geeksforgeeks.org/archives/7103
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/find-number-of-solutions-to-the-equation/#post-112480
 
 
 //#################################################//
 Q.:36
+How do you find the largest repeating string and the number of times it repeats in a given string efficiently off-course !?
+
+ex :
+
+String : “abc fghi bc kl abcd lkm abcdefg”
+
+Ans : “abcd” count = 2 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-strings-4/
 
 //#################################################//
 Q.:37
+U have got 3 sorted arrays A1 A2 and A3 having m n and p elements respectively. A gap of 3 arrays is defined to be max distance between 3 nos if they are put on a no line say u pick three 2 12 and 7 then the gap is 10. Now u have to find an efficient way of chosing 3 nos from these 3 seperate arrays (A1, A2, A3) such that their gap is minimum. Of course if a num say 2 occurs in all 3 then gap is 0!!! 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-arrays-12/
+
+SOLU: Similar to sort the K-Sorted array. By using the K-min heap. As given in geeksforgeeks.
+
 
 //#################################################//
 Q.:38
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-questions-f2f/
+
+
+
 
 //#################################################//
 Q.:39
+What is heap corruption..
+LINK:::http://www.efnetcpp.org/wiki/Heap_Corruption
+
+
 
 //#################################################//
 Q.:40
+Given an array and a number K. You have to find out longest subset from the array whose all pair sum will be greater than k.
+
+ex: {8,3,4,1,6,2,5,7,9} and K = 12
+
+ans: {8,6,7,9} or {5,7,8,9} 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-28/
+
+SOLU: Sort the array . And start from the end and traversing to the left until we find the pair with value less than the given k. Upto to that value all the element will be in our set.  
+
 
 //#################################################//
 Q.:40
+Given an expression get rid of the pointless brackets in it with out making an ambiguity in its execution.
+
+input output
+
+ex1: (a+(b)+c) a+b+c
+
+ex2: (a*b)+c a*b+c 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-77/
+
+
 
 //#################################################//
 Q.:42
+Removing d characters in Fibonacci position in a string and compacting it. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-24/
+
+
 
 //#################################################//
 Q.:43
+LINK:::http://www.geeksforgeeks.org/forums/topic/find-numbers-if-sum-xor-is-given/
+
 
 //#################################################//
 Q.:44
+Modified 2 color sort problem i.e. you are given an array of integers containing only 0s and 1s.You have to place all the 0s in even position and 1s in odd position. And if suppose, no. of 0s exceed no. of 1s or vice versa then keep them untouched. Do that in ONE PASS and without taking extra memory (modify the array in-place).
+
+For Example :
+
+Input Array: {0,1,1,0,1,0,1,0,1,1,1,0,0,1,0,1,1}
+
+Output Array: {0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,1} 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-arrays-12/
+
 
 //#################################################//
 Q.:45
+you have given two large array of unlimited Memory. Each array contain single digit number. You can move only in forward direction in array. You have to created a 3rd array which contain sum of digit of 1st and 2nd array.The condition in array is once you have written the data in 3rd array you cannot modify it and when you add two single digit no from 1st and 2nd array and there sum is greater than or equal to 10. you write 0 in 3rd array and forward the carry upward.
+
+you cannot take temp array of large memory
+
+example
+
+1st array 0,5,6,7,8,9
+
+2nd array 9,4,3,2,1,1
+
+3rd array 1,0,0,0,0,0 0 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-mbd-interview-question-2/
+
 
 //#################################################//
 Q.:46
+you have given a 3D cube. how many possible paths from one point to another point in Cube. 
+
 
 
 //#################################################//
 Q.:47
+There are set of coins of {50,25,10,5,1} paise in a box. Write a program to find the number of ways a 1 rupee can be created by grouping the paise. 
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-88/
+
 
 //#################################################//
 Q.:48
+Provided a string S of words and no of character per line m ,with m being greater than the longest phrase in S,print S in a set of lines so that every single line includes no far more than m characters and no phrase split between two lines. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-strings-16/
+
 
 //#################################################//
 Q.:49
+Given a graph, write a program to find if it is a bipartte graph or not!!! 
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-38/
+
 
 //#################################################//
-Q.:50
+Q.:50 DESIGN
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-design-questions/
+
+//#################################################//
+Q.:51
+Find the number of ways of placing 3 balls in 3 buckets. buckets are of diff capacity.
+
+bucket1 can hold 2 balls
+
+bucket2 – 3 balls
+
+bucket3 – 2 balls.
+
+ex. 1 1 1 is valid
+
+0 3 0 is valid 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-find-the-number-of-ways-of-placing-3-balls-in-3-buckets/
+
+//#################################################//
+Q.:52
+find all the possible palindrome words(2chars word,3chars word..etc..) from the given string. 
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-2/
+
+
+//#################################################//
+Q.:53
+How to Implement a Queue with a Priority Queue. Similarly how woud you implement Stack with Priority Queue 
+
+SOLU:for queue-set all priorites equal
+
+for stack- set the priorities in the increasing order(so that top element will have highest priority) 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-data-structure-18/
+
+
+//#################################################//
+Q.:54
+Given a array of random integers, sort the odd elements in descending order and even numbers in ascending order.
+
+e.g. for i/p (1,4,5,2,3,6,7)
+
+O/p = (7,5,3,1,2,4,6)
+
+Optimize for time complexity. 
+
+SOLU:multiply.. odd nos.. by -1
+
+then sort..
+
+then again multiply the negative nos.. by -1… u will get the answer…
+
+eg. 1,4,5,2,3,6,7
+
+-1,4,-5,2,-3,6,-7
+
+sort..
+
+-7, -5 , -3 , -1 , 2 , 4 , 6
+
+mutiply… by negative nos by -1…
+
+7,5,3,1,2,4,6 
+
+
+
+//#################################################//
+Q.:55
+Given numbers a1, a2, a3, a4, …,an and operators +, *, -. Parentheses are available. Can an appropriate combination of the variables and operators result into K. Report such a combination or infeasibility.
+
+for. eg. 2,3,4,5 and K=15;
+
+2*3+(4+5) = 15 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-10/
+
+
+//#################################################//
+Q.:56
+Implement the Color filling of MS-paint (when u click on an image.. all the pixels connected with the same color are filled with the choosen color). Given a matrix nXn having values of a color at each element.. try to implement the color filling when one of the element is selected and color c is given with which we have to fill. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-64/
+
+
+
+//#################################################//
+Q.:57
+Vankin’s Mile is a solitaire game played on an n X n square grid. The player starts by placing a token on any square of the grid. Then on each turn, the player moves the token either one square to the right or one square down. The game ends when player moves the token off the edge of the board. Each square of the grid has a numerical value, which could be positive, negative, or zero. The player starts with a score of zero; whenever the token lands on a square, the player adds its value to his score. The object of the game is to score as many points as possible. For example, given the grid below, the player can score 8 6+7 3+4 = 10 points by placing the initial token on the 8 in the second row, and then moving down, down, right, down, down
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-11/
+
+
+
+//#################################################//
+Q.:58
+your company has assigned you to design a spam detector….design,features,possible difficulties in your path….take a feature and explain how would u implement it —15 marks 
+'LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-design-pattern/
+
+
+//#################################################//
+Q.:59
+API methods (a)file * getfiles(dir); (b) dir * getsubdirs(dir);
+
+were given, and 2 structures one representing file and other representing dir were given. It is provided that both the structures have many members but only the name field is known to us in each structure. The name field is declared as a string.
+
+Now, implement a function to display all files and subdirs recursively… 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-0-2-years-about-cpuzzles/
+
+
+//#################################################//
+Q.:60
+Imagine you don’t understand english. So you don’t know the letters in the language nor the alpahbetical arrangement of them. Now you are given a alphabetically sorted list of words that is guranteed to have enough information to determine all unique charav=cters in the language and their alphabetical ordering.
+
+eg ab , bck , czar and so on .
+
+Now you need to come up with a algorithm to print a to z in alphabetical order after deducing the letters and the order for letters from the give words. (Imagine english is like greek to you :)) 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/output-the-letters-in-a-language-in-alphabetical-order/
+
+//#################################################//
+Q.:61
+Imagine you don’t understand english. So you don’t know the letters in the language nor the alpahbetical arrangement of them. Now you are given a alphabetically sorted list of words that is guranteed to have enough information to determine all unique charav=cters in the language and their alphabetical ordering.
+
+eg ab , bck , czar and so on .
+
+Now you need to come up with a algorithm to print a to z in alphabetical order after deducing the letters and the order for letters from the give words. (Imagine english is like greek to you :)) 
+
+SOLU::/**
+
+*  Builds complete ordering from partial order for ASCII strings.
+
+*/
+
+public class Graph {
+
+
+
+private int[][] _graph;
+
+
+
+Graph() {
+
+_graph = new int[256];
+
+for (int i=0; i<256; i++) {
+
+_graph = new int[256];
+
+}
+
+}
+
+
+
+public void addEdge(int c1, int c2) {
+
+_graph[c1][c2] = 1;
+
+}
+
+
+
+public void buildGraph(List<String> strings) {
+
+for (String s : strings) {
+
+for (int i=0; i<s.length()-1; i++) {
+
+addEdge((int)s.charAt(i), (int)s.charAt(i+1));
+
+}
+
+}
+
+
+
+public char[] getOrderingOfCharacters() {
+
+/* if graph has been built, run topological sort  and return
+
+if the graph cannot be sorted tolologically, then no data is insufficient */
+
+}
+
+}
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/output-the-letters-in-a-language-in-alphabetical-order/
+
+//#################################################//
+Q.:62
+CROSSWORD poblem.
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-57/
+
+
+//#################################################//
+Q.:63
+Write a function to print first repeated substring in a string.
+
+a) with overlap (the second string might overlap with the first)
+
+b) without overlap. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-0-2-years-about-strings/
+
+//#################################################//
+Q.:64
+In a Binary Tree, you have two pointers in the parent for left and right child. You have to change the given binary tree such that you have pointer for first child and next sibling from a node. 
+
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-trees-16/
+
+
+//#################################################//
+Q.:65
+PUZZLE
+LINKL:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-2/
+
+//#################################################//
+Q.:66
+Given a BST, a number s and a group of numbers g, check whether all the elements of g occur in the same path,all elements sum upto s without including root and the leaf 
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-trees-11/
+
+//#################################################//
+Q.:67
+One of the nodes has two parents in a given binary tree. Find out the node having two parents? 
+LInk:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-trees-12/
+
+//#################################################//
+Q.:68
+given a binary tree, check if it has any two leaves which differ by more that one level. 
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-8/
+
+//#################################################//
+Q.:69
+DESIGN
+LINK:::http://www.geeksforgeeks.org/forums/topic/microsoft-interview-question-for-software-engineerdeveloper-about-algorithms-48/
+
+//#################################################//
+Q.:70
+Suppose a matrix A (M*N) is given …. And A’ is defined as …..
+
+array A
+
+123
+
+456
+
+array A’
+
+36
+
+25
+
+14
+
+Matrix A is rotated in anticlockwise direction.
+
+So find …… A’[j] corresponds to ….. A[_?_][_?_]
+
+Solution should be in terms of M, N, i, j only. 
+
+//#################################################//
+Q.:71
+Given a string, first remove all repeated consecutive substring with length 1, then delete substring of length 2 and so on…
+
+Example : string is “abcabeccced”
+
+After removing repeated substring of length 1: “abcababceccced” –> “abcababceced” (2 ‘c’ are removed)
+
+After removing repeated substring of length 2: “abcababceced” –> “abcabceced” (substring “ab” is removed)
+
+and so on… 
+
+//#################################################//
+Q.:72
+There are n different machines, each having n numbers. Find median of these n*n numbers, but you can load only 2n integers at a time in memory 
+
+
+//#################################################//
+Q.:73
+
+
+//#################################################//
+Q.:74
+
+//#################################################//
+Q.:75
+
+//#################################################//
+Q.:76
+
+//#################################################//
+Q.:77
+
+//#################################################//
+Q.:78
+
+//#################################################//
+Q.:79
+
+//#################################################//
+Q.:80
+
+//#################################################//
+Q.:81
+
+//#################################################//
+Q.:82
+
+//#################################################//
+Q.:83
+
+//#################################################//
+Q.:84
+
+//#################################################//
+Q.:85
+
+//#################################################//
+Q.:86
+
+
