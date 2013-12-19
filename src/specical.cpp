@@ -1,3 +1,10 @@
+/**
+ * mail link:
+https://owapun.geometricglobal.com/owa/auth/logon.aspx?url=https://owapun.geometricglobal.com/owa/&reason=0
+ * 
+ */
+
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
