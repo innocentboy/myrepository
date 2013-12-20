@@ -30,6 +30,64 @@ void arrayElementDifference(int a[],int n)
     printf("\nvalue of sum:%d\n",sum);
 }
 
+/**
+Count No of set Bits in No.
+*/
+int  countSetBits(int n)
+{
+	//int n=16;
+	int c=0;
+	while(n>0)
+	{
+	 c++;
+	 n=n-(n&(~n+1));
+	}
+	//printf("\nCount:%d\n",c);
+	return c;
+}
+
+/**
+ * iT FINDS THE LEFT MOST SET BIT OFF THE GIVEN INTEGER.
+ */
+int leftMostSetBit(int n)
+{
+	int m=0;
+	while(n>1)
+	{
+	  n=n>>1;
+	  m++;
+	}
+	return m;
+}
+
+int countSetBitsOfNo(int n)
+{
+  int m=0; 
+  if(n==0) return 0;
+  if(!(n&(n+1)))
+  {
+    m=countSetBits(n);
+	return m*(1<<(m-1));
+  }
+  m=leftMostSetBit(n);
+  n=n-(1<<m);
+  return (n+1)+m*(1<<(m-1))+countSetBitsOfNo(n);
+}
+
+/**
+ * For finding the all Nos. of set bots between 1 to n. We need to call the below METHOD,
+ * WHICJ WILL CALL SOME EXTRA METHODS FOR CALCULATING THE RIGHT ANSWERS FOR GETTING THE THINGS.
+ *
+ */
+ 
+void findAllSetBits()
+{
+	printf("\nFind all set bits.\n");
+	int n=4;
+	printf("\nSet Bits:%d\n",countSetBitsOfNo(n));
+
+}
+
 //checks the divisibilty by 4.
 /*
 To check the divisibility by 4,8,16,or Numbers in binary representations, having Only one ste bit.
