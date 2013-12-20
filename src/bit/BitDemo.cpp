@@ -31,12 +31,19 @@ void arrayElementDifference(int a[],int n)
 }
 
 //checks the divisibilty by 4.
+/*
+To check the divisibility by 4,8,16,or Numbers in binary representations, having Only one ste bit.
+We need to check only the remainder that will be left after dividing thet No with the Divider.
+EX: Checking divisibility by different N0(divisor) to given divident n is.
+    2=!(n&1)
+    4=!(n&3)
+    8=!(n&7)
+    16=!(n&15)
+*/
 int DivisibleBy4(int n)
 {
     n = n > 0 ? n : -n;
-    while( n > 0 )
-        n = 2*(n>>1) - (n & 0);
-    return (n == 0);
+    return (!(n&&3));
 }
 
 //checks the divisibilty by 3.
