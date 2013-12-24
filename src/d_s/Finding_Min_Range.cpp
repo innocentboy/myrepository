@@ -28,6 +28,10 @@ using namespace std;
 #define N 100
 int a[N],M[4*N];
 
+/**
+ * This is used to build The tree for  giving the answer for different ranges.
+ * It uses the almost Complete binary tree  structure similar to the Heap Data structure.
+ */
 void build(int index,int s,int e)
 {
 	if(s==e)
@@ -36,10 +40,14 @@ void build(int index,int s,int e)
 		return ;
 	}
 	int m=(s+e)/2;
-    build(index*2+1,s,m);
+        build(index*2+1,s,m);
 	build(index*2+2,m+1,e);
 	M[index]=min(M[index*2+1],M[index*2+2]);
 }
+/**
+ *This is Query function which is used to get the answer for
+ * the specified range by I and J. 
+ */
 int query(int index,int l,int r,int s,int e)
 {
 	if(l>e||r<s)
@@ -55,6 +63,27 @@ int query(int index,int l,int r,int s,int e)
 	return min(left,right);
 }
 
+/**
+ * This is the Update function for updating the value of a given index..
+ * along with it insures that it will also correct the range vlaue in 
+ * the range range M[] array. So that , future values could be reflect through the query
+ * function.
+ */
+ int update(int index,int s,int e,int i,int val)
+{
+	if(s<=i&&i<=e)
+	{
+		if(s==i&&e==i)
+			return M[index]=val;
+		int left,right,m;
+		m=(s+e)/2;
+		left=update(index*2+1,s,m,i,val);
+		right=update(index*2+2,m+1,e,i,val);
+		return M[index]=min(left,right);
+	}
+	else
+		return M[index];
+}
 
 void driver()
 {
@@ -64,12 +93,6 @@ void driver()
 	for(i=0;i<n;i++)
 		scanf("%d",&a[i]);
 	build(0,0,n-1);
-	/*
-	printf("\nprintf the build Array..\n");
-	for(i=0;i<2*n+2;i++)
-		printf("%d %d |",i,M[i]);
-	printf("\n");
-	*/
 	while(q--)
 	{
 		scanf("%d%d",&i,&j);
