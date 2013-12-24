@@ -32,24 +32,26 @@ void build(int index,int s,int e)
 {
 	if(s==e)
 	{
-		M[index]=a[e];
+		M[index]=a[s];
 		return ;
 	}
 	int m=(s+e)/2;
-    build(index*2,s,m);
-	build(index*2+1,m+1,e);
-	M[index]=min(M[index*2],M[index*2+1]);
+    build(index*2+1,s,m);
+	build(index*2+2,m+1,e);
+	M[index]=min(M[index*2+1],M[index*2+2]);
 }
 int query(int index,int l,int r,int s,int e)
 {
 	if(l>e||r<s)
 		return 99999;
-	if(s<=l&&r<=e)
+	if(l<=s&&e<=r)
+	{
 		return M[index];
+	}
 	int left,right,m;
 	m=(s+e)/2;
-	left=query(index*2,l,r,s,m);
-	right=query(index*2+1,l,r,m+1,e);
+	left=query(index*2+1,l,r,s,m);
+	right=query(index*2+2,l,r,m+1,e);
 	return min(left,right);
 }
 
