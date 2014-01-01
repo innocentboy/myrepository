@@ -46,6 +46,17 @@ void update(int x,int y,int n,int val)
 	  }
 	  x+=x&(-x);
    }
+
+   /*
+   printf("\nPrint the array...\n");
+   for(int i=0;i<=n;i++)
+   {
+	for(int j=0;j<=n;j++)
+		printf("%d ",a[i][j]);
+	printf("\n");
+   }
+   */
+
 }
 int read(int x,int y,int n)
 {
@@ -58,7 +69,7 @@ int read(int x,int y,int n)
 		sum+=a[x][y1];
 		y1-=y1&(-y1);
 	 }
-	 x+=x&(-x);
+	 x-=x&(-x);
    }
    return sum;
 }
@@ -73,19 +84,38 @@ void driver()
 	{
 		scanf("%d",&n);
 		while(1){
-		for(i=1;i<=n;i++)
+		for(i=0;i<=n;i++)
 		{
-		  for(j=1;j<=n;j++)
+		  for(j=0;j<=n;j++)
 			  a[i][j]=0;
 		}
 		scanf("%s",s);
 		if(s[0]=='S'&&s[1]=='E')
 		{
-		
+			scanf("%d%d%d",&r1,&c1,&k);
+			r1++;c1++;
+			r2=r1;c2=c1;
+		  j=read(r2,c2,n);
+		  j+=read(r1-1,c1-1,n);
+		  j-=read(r1-1,c2,n);
+		  j-=read(r2,c1-1,n);
+		  update(r1,c1,n,k-j);
 		}
 		else if(s[0]=='S'&&s[1]=='U')
 		{
-		
+		  scanf("%d%d%d%d",&r1,&c1,&r2,&c2);
+		  r1++;c1++;r2++;c2++;
+		  printf("\n%d %d %d %d",r1,c1,r2,c2);	
+		  k=read(r2,c2,n);
+		  printf("\n%d ",k);
+		  k+=read(r1-1,c1-1,n);
+		  printf("%d ",k);
+		  k-=read(r1-1,c2,n);
+		  printf("%d ",k);
+		  k-=read(r2,c1-1,n);
+		  printf("%d ",k);
+
+		  printf("\nAns:%d\n",k);
 		}
 		else
 		{
