@@ -32,3 +32,8 @@ http://www.codeproject.com/KB/cpp/
 
 OS:
  http://poincare.matf.bg.ac.rs/~ivana//courses/ps/sistemi_knjige/pomocno/apue.pdf
+
+
+######################################
+DOT-NET AND NATIVE(C++) INTEROPERABILITY
+http://msdn.microsoft.com/en-us/library/zbz07712%28v=VS.90%29.aspx
