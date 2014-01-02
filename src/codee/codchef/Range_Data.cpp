@@ -15,13 +15,13 @@ OUTPUT:
 
 /**
 There are TWO METHODS: to solve this problem.
-FIRST: By using BIT, But BIT should be used only when we are required to find out both the Operation as 
+FIRST: By using BIT, But BIT should be used only when we are required to find out both the Operation as
 	   applying the some between the given frequency as well as Fing the Frequency of Particular Instance
 	   or range of DATA. But here is situation is not like that. So we should prefer the second over the first.
 
-SECOND: Second method is simply to keep the SUM of No to that particulat strating and subtract the 
+SECOND: Second method is simply to keep the SUM of No to that particulat strating and subtract the
 		similar No from the  ending index+1 .of the given INDEX  and Vice-Versa.
-		In the last traverse the array and find the MInimum and Maximum between them. 
+		In the last traverse the array and find the MInimum and Maximum between them.
 */
 
 #include <cstdio>
@@ -30,7 +30,7 @@ SECOND: Second method is simply to keep the SUM of No to that particulat stratin
 using namespace std;
 
 #define N 1000005
-long long a[N];
+int a[N];
 
 /**
 Code related to the BIT.
@@ -38,9 +38,9 @@ Code related to the BIT.
 /**
 METHOD 1: Using BIT.
 */
-long long read(int idx)
+int read(int idx)
 {
-	long long sum=0;
+	int sum=0;
 	while(idx>0)
 	{
 		sum+=a[idx];
@@ -48,7 +48,7 @@ long long read(int idx)
 	}
 	return sum;
 }
-void update(int idx,int maxVal,long long val)
+void update(int idx,int maxVal,int val)
 {
 	while(idx<=maxVal)
 	{
@@ -57,16 +57,10 @@ void update(int idx,int maxVal,long long val)
 	}
 }
 
-/**
-METHOD 2: Using simple method..
-*/
-
-void driver()
+int main()
 {
-	printf("\nDriver method is called\n");
-	int i,j,k,t,n,m,w,x,y;
-	long long z;
-	long long minn,maxx,cur;
+	int i,j,k,t,n,m,w,x,y,z;
+	int minn,maxx,cur;
 	scanf("%d",&t);
 	while(t--)
 	{
@@ -75,8 +69,8 @@ void driver()
 			a[i]=0;
 		while(m--)
 		{
-			scanf("%d%d%d%lld",&w,&x,&y,&z);
-			/* USING BIT METHOD 1:
+			scanf("%d%d%d%d",&w,&x,&y,&z);
+
 			if(w==1)
 			{
 				update(x,n,z);
@@ -87,7 +81,48 @@ void driver()
 				update(x,n,-z);
 				update(y+1,n,z);
 			}
-			*/
+
+		}
+		minn=a[1]+1;maxx=a[1]+1;
+		cur=0;
+		for(i=2;i<=n;i++)
+		{
+			cur=read(i);
+			if(cur+i<minn)
+				minn=cur+i;
+			else if(cur+i>maxx)
+				maxx=cur+i;
+		}
+		printf("%d\n",maxx-minn);
+	}
+    return 0;
+}
+
+/**
+//METHOD:2
+
+#include <cstdio>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+#define N 1000005
+int a[N];
+
+int main()
+{
+	//printf("\nDriver method is called\n");
+	int i,j,k,t,n,m,w,x,y,z;
+	int minn,maxx,cur;
+	scanf("%d",&t);
+	while(t--)
+	{
+		scanf("%d%d",&n,&m);
+		for(i=1;i<=n;i++)
+			a[i]=0;
+		while(m--)
+		{
+			scanf("%d%d%d%d",&w,&x,&y,&z);
 			if(w==1)
 			{
 				a[x]+=z;
@@ -100,7 +135,7 @@ void driver()
 			}
 		}
 		minn=a[1]+1;maxx=a[1]+1;
-		cur=a[1]+1;
+		cur=a[1];
 		for(i=2;i<=n;i++)
 		{
 			cur+=a[i];
@@ -109,7 +144,9 @@ void driver()
 			else if(cur+i>maxx)
 				maxx=cur+i;
 		}
-		printf("%lld\n",maxx-minn);
+		printf("%d\n",maxx-minn);
 	}
-
+    return 0;
 }
+
+*/
