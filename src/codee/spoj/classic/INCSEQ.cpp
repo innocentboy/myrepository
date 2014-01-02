@@ -6,7 +6,7 @@ http://www.spoj.com/problems/INCSEQ/
 1  K 50
 
 INPUT:
-6 3
+7 4
 1
 2
 2
@@ -64,23 +64,10 @@ void driver()
 		  {
 		    if(a[i]>a[j])
 			{
-			  if(dp[j][l-1]>0&&dp[i][l]>0)
-				  dp[i][l]=(dp[j][l-1]+1)%M;
-			  else if(dp[j][l-1]>0)
-				  dp[i][l]=(dp[j][l-1])%M;
-
+				  dp[i][l]=(dp[i][l]+dp[j][l-1])%M;
 			}
 		  }
 		}
-		/*
-		printf("\nprint the array...\n");
-		for(j=0;j<n;j++)
-		{
-			for(l=1;l<=k;l++)
-				printf("%d ",dp[j][l]);
-			printf("\n");
-		}
-		*/
 	}	
 		ans=0;
 		for(i=0;i<n;i++)
