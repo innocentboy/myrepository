@@ -36,4 +36,42 @@ OS:
 
 ######################################
 DOT-NET AND NATIVE(C++) INTEROPERABILITY
-http://msdn.microsoft.com/en-us/library/zbz07712%28v=VS.90%29.aspx
+http
+
+#######################################
+*************************************************************************************
+ALGORITHIMIC BLOCKS
+*************************************************************************************
+// C++Demo.cpp : main project file.
+//UTIB0000269 
+
+/**
+#################
+FOR FINDING THE LENGTH OF LONGEST VALID PARENTHESES SEQUENCES:
+1.BLOG:http://xixiaogualu.blogspot.in/2013/09/leetcode-longest-valid-parentheses.html
+2.https://gist.github.com/daifu/5836083
+
+#################
+MAX POINTS ON A LINE:
+1.http://blog.csdn.net/huaangsu/article/details/16923619
+
+#################
+SURROUNDED REGION:
+1.http://jane4532.blogspot.in/search/label/DFS
+
+#################
+LINK CONSISTS OF DIFFERENT ALGORITHM:
+1.http://jane4532.blogspot.in/search/label/big%20data
+
+################
+LEETCODE WORD BREAK 2:
+1.http://xixiaogualu.blogspot.in/search/label/dynamic%20programming
+
+################
+LEET CODE SINGLE NUMBER 2:
+1.http://www.cnblogs.com/daijinqiao/p/3352893.html
+
+################
+SPOJ SOLUTIONS LINK:
+https://github.com/mintuhouse/spoj-solutions
+*/
