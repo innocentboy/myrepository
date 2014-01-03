@@ -46,17 +46,6 @@ void update(int x,int y,int n,int val)
 	  }
 	  x+=x&(-x);
    }
-
-   /*
-   printf("\nPrint the array...\n");
-   for(int i=0;i<=n;i++)
-   {
-	for(int j=0;j<=n;j++)
-		printf("%d ",a[i][j]);
-	printf("\n");
-   }
-   */
-
 }
 int read(int x,int y,int n)
 {
@@ -75,20 +64,21 @@ int read(int x,int y,int n)
 }
 
 
-void driver()
+int main()
 {
-	printf("\ndriver of matsum is running..\n");
+	//printf("\ndriver of matsum is running..\n");
 	int i,j,k,n,t,r1,r2,c1,c2;
     scanf("%d",&t);
 	while(t--)
 	{
 		scanf("%d",&n);
-		while(1){
-		for(i=0;i<=n;i++)
+        for(i=0;i<=n;i++)
 		{
 		  for(j=0;j<=n;j++)
 			  a[i][j]=0;
 		}
+		while(1)
+		{
 		scanf("%s",s);
 		if(s[0]=='S'&&s[1]=='E')
 		{
@@ -105,22 +95,17 @@ void driver()
 		{
 		  scanf("%d%d%d%d",&r1,&c1,&r2,&c2);
 		  r1++;c1++;r2++;c2++;
-		  printf("\n%d %d %d %d",r1,c1,r2,c2);	
 		  k=read(r2,c2,n);
-		  printf("\n%d ",k);
 		  k+=read(r1-1,c1-1,n);
-		  printf("%d ",k);
 		  k-=read(r1-1,c2,n);
-		  printf("%d ",k);
 		  k-=read(r2,c1-1,n);
-		  printf("%d ",k);
-
-		  printf("\nAns:%d\n",k);
+		  printf("%d\n",k);
 		}
 		else
 		{
-			break;	
+			break;
 		}
 	  }
 	}
+	return 0;
 }
