@@ -40,16 +40,28 @@ using namespace  std;
 #define K 52
 #define M 5000000
 
+struct compare
+{
+	bool operator()(const pair<int,int> &a,const pair<int,int> &b) const
+	{
+		return a.first<b.first;
+	}
+};
+
 int a[N];
 int dp[N][K];
+set< pair<int,int> > st;
+set< pair<int,int> >::iterator it,it1;
+
 
 int main()
 {
 	//printf("\ndriver of incse is running...\n");
 	int i,j,l,k,n,ans=0;
 	scanf("%d%d",&n,&k);
-	for(i=0;i<n;i++)
+	for(i=0;i<n;i++){
 		scanf("%d",&a[i]);
+	}
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<=k;j++)
@@ -59,16 +71,25 @@ int main()
 
 	for(i=0;i<n;i++)
 	{
-		for(j=0;j<i;j++)
-		{
-		  for(l=2;l<=k;l++)
-		  {
-		    if(a[i]>a[j])
+		    printf("\n");
+		    it=st.lower_bound(make_pair(a[i],i));
+			for(it1=st.begin();it1!=it;it1++)
 			{
-				  dp[i][l]=(dp[i][l]+dp[j][l-1])%M;
+				j=(*it1).second;
+				printf("%d ",a[j]);
+				for(l=2;l<=k;l++)
+				{
+						if(a[i]>a[j])
+						{
+							dp[i][l]=(dp[i][l]+dp[j][l-1])%M;
+						}
+				}
 			}
 		  }
 		}
+	}
+		st.insert(make_pair(a[i],i));
+		//printf("\nlen:%d\n",st.size());
 	}
 		ans=0;
 		for(i=0;i<n;i++)
