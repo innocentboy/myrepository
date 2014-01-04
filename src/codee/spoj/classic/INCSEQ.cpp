@@ -15,7 +15,7 @@ INPUT:
 4
 25
 
-4 2
+4 3
 1
 2
 2
@@ -23,6 +23,7 @@ INPUT:
 
 
 OUTPUT:
+11
 2
 */
 #include <cstdio>
@@ -42,10 +43,10 @@ using namespace  std;
 int a[N];
 int dp[N][K];
 
-void driver()
+int main()
 {
 	//printf("\ndriver of incse is running...\n");
-	int i,j,l,k,n,ans=0; 
+	int i,j,l,k,n,ans=0;
 	scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++)
 		scanf("%d",&a[i]);
@@ -68,11 +69,12 @@ void driver()
 			}
 		  }
 		}
-	}	
+	}
 		ans=0;
 		for(i=0;i<n;i++)
 		{
 			ans=(dp[i][k]+ans)%M;
 		}
 		printf("%d\n",ans);
+		return 0;
 }
