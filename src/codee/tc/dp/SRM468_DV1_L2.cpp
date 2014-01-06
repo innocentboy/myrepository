@@ -6,47 +6,6 @@ http://apps.topcoder.com/wiki/display/tc/SRM+468
 
 /**
 INPUT:
-3
-
-14
-
-1
-
-2
-
-10
-
-18
-
-1
-
-10
-
-17
-
-1
-
-
-5
-
-85739
-
-94847
-
-93893
-
-98392
-
-92840
-
-93802
-
-93830
-
-92790
-
-3
-
 //
 3
 4 6 8
@@ -86,6 +45,7 @@ OUTPUT:
 #include <cmath>
 #define N 4000004
 using namespace std;
+
 int flight[N],road[N];
 int n,k;
 
