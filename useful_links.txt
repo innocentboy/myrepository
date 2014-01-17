@@ -79,3 +79,8 @@ https://github.com/mintuhouse/spoj-solutions
 
 ################
 PF:http://www.epfindia.gov.in/Employee_OTCP.html
+
+
+####################################################################################################
+C++ TUTORIAL:
+             http://www.cprogramming.com/tutorial/c++_memory_problems.html
