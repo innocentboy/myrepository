@@ -1,8 +1,10 @@
 /**
   this file implement the structure of binary index tree.
-  Q:Statement:  There is an array of n cards. Each card is putted face down on table. You have two queries: 
-  1. T i j (turn cards from index i to index j, include i-th and j-th card - card which was face down will be face up;   
-  card which was face up will be face down)  
+  Q:Statement:  There is an array of n cards. Each card is putted face down on table. You have two
+  queries:
+  1. T i j (turn cards from index i to index j, include i-th and j-th card - card which was face down
+  will be face up;
+  card which was face up will be face down)
   2. Q i (answer 0 if i-th card is face down else answer 1)
 */
 

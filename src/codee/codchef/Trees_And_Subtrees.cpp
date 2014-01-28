@@ -28,8 +28,18 @@ OUTPUT:
 NO
 YES
 */
+#include<cstdio>
+#include<iostream>
+#include<algorithm>
+#define N 100005
+#define M 1005
 
-void driver()
+using namespace std;
+
+int main()
 {
 	printf("\nDriver is running..\n");
+	int u,j,k,n,m,q;
+
+	return 0;
 }
