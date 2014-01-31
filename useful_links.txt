@@ -84,3 +84,12 @@ PF:http://www.epfindia.gov.in/Employee_OTCP.html
 ####################################################################################################
 C++ TUTORIAL:
              http://www.cprogramming.com/tutorial/c++_memory_problems.html
+             
+
+##############
+PAYROLL:
+https://mypayroll.paysquare.com/
+
+username: 143-18482
+pass:             
+             
