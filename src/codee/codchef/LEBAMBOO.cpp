@@ -121,6 +121,7 @@ void driver()
 		for(i=0;i<n;i++)
 		{
 			j=(s+H[i]-D[i])*.5;
+			//If j<0 or j is an Non-integer then no solution exits.
 			if(j<0||j*2!=(s+H[i]-D[i]))
 			{
 				flag=true;
