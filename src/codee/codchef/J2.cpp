@@ -78,11 +78,11 @@ void driver()
 			for(j=0;j<=l2;j++)
 			{
 				if(i==0||j==0)
-					dp[i][j]=0;
+					dp[i][j]=1;
 				else
 				{
 					if(s1[i-1]==s2[j-1])
-						dp[i][j]=1;
+						dp[i][j]=dp[i-1][j-1];
 					else
 					{
 						dp[i][j]=0;
@@ -91,7 +91,12 @@ void driver()
 						if(lcsDP[i][j-1]==lcsDP[i][j])
 							dp[i][j]=(dp[i][j]+dp[i][j-1])%M;
 						if(lcsDP[i][j]==lcsDP[i-1][j-1])
-							dp[i][j]=(dp[i][j]-dp[i-1][j-1])%M;
+						{
+							if((dp[i][j]-dp[i-1][j-1])>0)
+								dp[i][j]=(dp[i][j]-dp[i-1][j-1])%M;
+							else
+								dp[i][j]=(dp[i][j]-dp[i-1][j-1])+M;
+						}
 					}
 				}
 			}
