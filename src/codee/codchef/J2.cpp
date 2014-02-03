@@ -4,12 +4,15 @@ http://www.codechef.com/problems/J2
 
 /**
 Input
-2
+3
 acbd
 acbd
 
 vnvn
 vn
+
+abcd
+efgh
 
 Output
 4 1
@@ -77,6 +80,8 @@ void driver()
 		{
 			for(j=0;j<=l2;j++)
 			{
+				//Base case.We have empty string subsequence common in both strings.
+				//That's why it's value i.e. No. of distinct LCS would be 1.
 				if(i==0||j==0)
 					dp[i][j]=1;
 				else
@@ -90,6 +95,8 @@ void driver()
 							dp[i][j]=dp[i-1][j]%M;
 						if(lcsDP[i][j-1]==lcsDP[i][j])
 							dp[i][j]=(dp[i][j]+dp[i][j-1])%M;
+						//This is the overlapping situation so we need to subtract it,
+						//otherwise we would not get the Distinct LCS.
 						if(lcsDP[i][j]==lcsDP[i-1][j-1])
 						{
 							if((dp[i][j]-dp[i-1][j-1])>0)
@@ -101,6 +108,8 @@ void driver()
 				}
 			}
 		}
+		//In case Maxlength of LCS of Both strings are  0, i.e. we have empty string subsequence ,still 
+		//No of distinct LCS would be one.
 		printf("%d %d\n",lcsDP[l1][l2],dp[l1][l2]);
 	}
 
