@@ -2,6 +2,16 @@
 http://www.codechef.com/problems/COUNTPAL/
 */
 /**
+NOTE:  FOR FINDING THE ALL POSSIBLE NO. OF PALINDROM THAT ARE POSSIBLE BY ANY STRING :
+        WE NEED TO CONSIDER EACH SUBSTRING OF S[I....J] SUCH THAT THEY FORM THE PALINDROM
+        , THEN IF WE HAVING ALREADY THE NO OF PALINDROM STORED FOR SUBSTRING S[J+1... N]
+        THEN NUMBER OF PALINDROM FOR S[I....N]=nO. OF PALINDROM FOR S[I..N]+ NO. OF PALINDROM FOR S[J+1...N]
+        THIS WILL BE CALCULATED FOR ALL SUBSTRING FROM J=I TO N FOR EACH I.
+        AND IN THE END WE WOULD BE WITH OUR ANSWER STORED IN THE NOOFPALINDROM[0], ARRAY WHICH
+        STORES THE NO OF ALL PALINDROM PRESENT IN THE STRING.
+*/
+
+/**
 Input:
 bobseesanna
 
@@ -30,8 +40,7 @@ int strlenn(char *s)
 	return i-1;
 }
 
-//int main()
-void driver()
+int main()
 {
 	//printf("\ndriver of Countpal is running..\n");
 	int i,j,k,n;
@@ -43,7 +52,7 @@ void driver()
 	bool dp[N][N]={false};
 
 	//fq[], for storing the count of all possible palindrom till that index i.
-	int fq[N];
+	long long fq[N];
 	for(i=0;i<=n;i++)
 		fq[i]=0;
 	for(i=0;i<n;i++)
@@ -56,10 +65,11 @@ void driver()
 			if(s[i]==s[j]&&((j-i)<2||dp[i+1][j-1]))
 			{
 				dp[i][j]=true;
-				fq[i]+=(fq[j+1])%M;
+				fq[i]=(fq[i]+fq[j+1])%M;
 			}
 		}
 	}
-	printf("%d\n",fq[0]%M);
-	//return 0;
+	printf("%lld\n",fq[0]%M);
+
+	return 0;
 }

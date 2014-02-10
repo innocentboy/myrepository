@@ -34,6 +34,7 @@ Output:
 #include<cmath>
 #include<cstring>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 #define N 25
 
@@ -43,15 +44,15 @@ int newr[N];
 bool checkArrest(int n,int k,int m)
 {
     int i,j,c=0;
-    for(i=0;i<n-k;i++)
+    for(i=0;i<=n-k;i++)
     {
         c=0;
         int maxx=-1;
-        for(j=i;j<=i+k;j++)
+        for(j=i;j<i+k;j++)
         {
             maxx=max(maxx,newr[j]);
         }
-        for(j=i;j<=i+k;j++)
+        for(j=i;j<i+k;j++)
         {
             if(maxx==newr[j]) c++;
         }
@@ -88,10 +89,10 @@ int main()
             for(j=0;j<n;j++)
             {
                 if(i&(1<<j))
-                    newr[i]=r[i]+1;
+                    newr[j]=r[j]+1;
 
                 else
-                    newr[i]=r[i];
+                    newr[j]=r[j];
             }
 
             if(!checkArrest(n,k,m))
@@ -102,9 +103,9 @@ int main()
             }
         }
         if(maxx!=99999)
-            printf("\nans:%d\n",maxx);
+            printf("%d\n",maxx);
         else
-            printf("ans -1\n");
+            printf("-1\n");
     }
 
 	return 0;

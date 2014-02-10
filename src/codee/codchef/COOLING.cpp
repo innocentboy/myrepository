@@ -14,7 +14,7 @@ Sample input:
 Sample output:
 3
 4
- 
+
 */
 
 #include <cstdio>
@@ -29,8 +29,8 @@ Sample output:
 using namespace  std;
 #define N 1005
 #define M 1000000007
-//int main()
-void driver()
+
+int main()
 {
 	int i,j,k,t,n;
 	int pw[N],mw[N];
@@ -61,6 +61,5 @@ void driver()
 		}
 		printf("%d\n",ans);
 	}
-
-	//return 0;
+    return 0;
 }
