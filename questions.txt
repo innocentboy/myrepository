@@ -1469,3 +1469,62 @@ ARRAY:     1.http://discuss.codechef.com/questions/28737/johny-editorial
 //###############################################################################//
 //*******************************************************************************//
 MATH  LINK:::  http://www.mathworks.in/help/matlab/ref/unique.html
+
+
+
+//********************************************************************************//
+//###############################################################################//
+//*******************************************************************************//
+
+/**
+1. Find your own method for balancing any Unbalanced binary tree. (You should not use any exiting method, of AVL of RB-tree.)
+2. Find the distance between two given nodes in Binary tree- when Parent pointer is not given.
+	(http://www.geeksforgeeks.org/amazon-interview-set-57/)
+
+1.There is very huge text file consisting several rows and columns of integers. Memory available is not sufficient to store 
+	whole text file. One column can be stored in memory. Sort whole file corresponding to given column keeping all rows unchanged.
+	You cannot make new text file. Write neat code on paper.
+	(http://www.geeksforgeeks.org/amazon-interview-set-58-campus-software-development-engineer/)
+
+1.	Convert a Binary tree into another binary tree whose in-order traversal gives a sorted list
+	This has to be done in-place.
+	(http://www.geeksforgeeks.org/amazon-interview-set-68-for-sde-1/)
+
+1.	Given a position where a knight is placed on an nXn chessboard. Find the maximum number of knights that can be placed on the board, 
+	so that no 2 knights attack each other.
+	Remember that you need to just give the number of knights, not all their positions. I first could arrange ceil(n*n/3) knights. Then 
+	he asked me find a better solution. Finally I got to ceil(n*n/2). Then he asked me to code it. Then he asked me to remove the ceil
+	condition(check for even and odd separately).
+	(http://www.geeksforgeeks.org/amazon-interview-set-55-on-campus/)
+
+1.	Given a 20 GB file and 2GB RAM, how to parse it and detect where to break it, concepts of memory management
+2.	Convert a given number to Roman numbers
+	(http://www.geeksforgeeks.org/amazon-interview-set-54-on-campus-for-sde/)
+
+1.	Suppose you have to maintain the stock values of various companies during 
+	various periods and return minimum stock value of a particular company over a given period of time.
+	(http://www.geeksforgeeks.org/amazon-interview-set-54-internship/)
+
+1.	(http://www.geeksforgeeks.org/amazon-interview-set-53-sde-1/)
+
+1.	(http://www.geeksforgeeks.org/amazon-interview-set-51-campus-sdet/) Game problem
+
+1.	N number of jars are kept in a linear fashion. Each jar contains a color whose value ranges from 0-99. 
+	Now you can mix any two adjacent jars having colors ‘a’ and ‘b’ (both integers), and it will produce a 
+	new color of the value (a+b) mod 100 and will also produce smoke with value (a*b). Mix all the jars in a way 
+	such that in the end only one jar remains and total smoke produced is minimum.
+	(http://www.geeksforgeeks.org/amazon-interview-set-48-campus-sde-1/)
+
+1.	You have to find p,q of matrix p*q such that it fill n elements(n given) Such that
+	a) matrix should be nearest to a square matrix and
+	b) 0<=((p*q)-n)<=2 
+	(http://www.geeksforgeeks.org/amazon-interview-set-46-campus-internship/)
+
+1.	http://www.geeksforgeeks.org/amazon-interview-set-43-campus/
+
+1.	http://www.geeksforgeeks.org/adobe-interview-set-7-campus-mts-1/
+
+1.	http://www.geeksforgeeks.org/amazon-interview-set-42-on-campus/
+
+1.	http://www.geeksforgeeks.org/amazon-interview-set-41-campus/
+*/
