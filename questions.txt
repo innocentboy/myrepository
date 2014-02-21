@@ -1527,4 +1527,101 @@ MATH  LINK:::  http://www.mathworks.in/help/matlab/ref/unique.html
 1.	http://www.geeksforgeeks.org/amazon-interview-set-42-on-campus/
 
 1.	http://www.geeksforgeeks.org/amazon-interview-set-41-campus/
+
+1.	 Given an array of n numbers with repetition of numbers. You need to find the max length of continuous sub array with at max 3 
+	unique elements.
+	For eg
+	array: 1 2 3 1 4 3 4 1 2
+	ans: 6 (3 1 4 3 4 1)
+	Solution: Time complexity O(n)
+2.	You are given two binary trees. You need to tell that if one tree is rotated 90 degree and placed
+		at bottom of that tree and each leaf nodes at max depth of two trees will meet each other or not..
+3.	Suppose u given normal deck of cards 4 suites and 13 cards of each suite in which one card is missing
+	you are picking a card one at a time and sees that card and putting it aside
+	Find the suite and number of missing card.
+	Then he said change the number of suites to K (very very large you cant add till k)
+	and N numbers (again very large numbers)
+4.	a knight is placed at (x,y) and he moves N hops
+	Find the probabilty that he will be inside after N hops.
+	On a condition that if a knight moves outside then he will remain outside he cant come inside.
+	For eg. (x,y)=(0,0)
+	n=2
+	probabilty=(12/64)
+	(http://www.geeksforgeeks.org/amazon-interview-set-37/)
+
+1.	 There is a string, in which all the spaces are removed, we have to find the 
+	original string with the help of a machine which takes input a word checks that it is valid or not.
+	(http://www.geeksforgeeks.org/amazon-interview-set-36/)
+
+1.	 Glass pyramid problem.Measure amount of water in j’th glass of i’th row.(algo+code)
+	
+1.	 Suppose we receive requests for a page, but we want to ensure that max no of request per sec is ‘x’. If there 
+		are more than x requests,what will you do?
+	We want a continuous flow. How will you do that?
+
+1.	 given a matrix of size m * n, place k students in such a way so that 
+	cheating in an exam could be minimized…. Was asked to just explain the approach, no code required.	
+
+1.	You are given prices of stock of a company at consecutive days in an array..write a code to find the 
+	maximum profit one can make by keeping a stock value for as long as possible..that value of a stock is called a stable 
+	stock value.
+	Example::
+	6 5 9 8 3
+	(IT'S A VARIATION OF FINDING THE LARGEST RECTANGLE IN A HISTOGRAM.)
+
+1.	Given a string, find the longest sinusoidal sequence in it. If there are multiple such sequences of same maximum length, 
+	return the one which comes first in lexicographic order in a dictionary..
+	Sinusoidal means increasing then decreasing then increasing and so on.
+	Example ::
+	a r u n ::
+	a u n , a r n , r u n are three such sequences of length 3…. But, a r n is output since it comes first in lexicographic order.
+	
+1.	Find the longest substring in a string with exactly 2 unique characters. The substring should not contain more than two 
+	different chars.
+	So, aaaaabbaaa is a valid substring
+
+1.	Third was that for a given BST invert the signs of the elements and finally have a new BST. It clicked my mind that after sign 
+	inversion it will be a mirror tree and gave the solution for the same.
+	(IT'S THE VARIATION OF FINDING THE MIRROR OF GIVEN BST).
+
+1.	 There is a dictionary already implemented. Write a method, which takes input String without space, to prints all subsets
+	of the input string which is present in dictionary.
+
+1.	http://www.geeksforgeeks.org/amazon-interview-set-22/
+
+1.	 A robot is there in 2D space, which can move to its left direction. You are given with an array which are moves of robot,
+	which starts from origin(0,0). Find the rectangle covered by it.
+	I/P: { 2,3,4,5,6,1,3,5,5} starts at (0,0)
+	O/P: rectangle points: ( -4,4 ) to (4,-2)
+
+1.	Given an array of numbers if we start deleting numbers from end of array, then we 
+	have to tell the maximum element of the array after deletion in O(1).
+
+1.	Ansester matrix for a tree.
+
+1.	 Given a large file which contains m rows and n columns. Given a column no, sort 
+	the column in such a way that corresponding rows also sorted
+
+1.	Given a binary tree, if parent is 0, then left child is 0 and right child is 1. if parent is 1, then left 
+	child is 1 and right child is 0. Root of the tree is 0. Find the kth node value which is present at Nth level.
+
+1.	 Find immediate ancestor of a given Node 
+
+1.	You will be given the number of pairs of parenthesis. Find out the total possible 
+	valid unique combinations and there should not be any duplicity. Write code .
+
+1.	  Rules: consider BST made from given array. Let say number x is present in the BST and to reach x, If you go right print 1, 
+	if left then 0.
+    Now you are given an index i in the array A (so x = A[i]) and print the encoding without constructing BST to reach x
+    and without space with least time complexity.
+
+1.	Given N sets of integers, remove some sets so that the remaining all sets are disjoint with one another. 
+	Find the optimal solution so that the number of sets remaining at the end is maximum.
+
+1.	Construct a tree from ancestor matrix. The main thing he wanted to check was use of binary search.
+
+1.	 Design a system, which can convert books from one format to another
+
+1.	
+
 */
