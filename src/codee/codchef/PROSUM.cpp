@@ -3,7 +3,7 @@ LINK:::http://www.codechef.com/MARCH14/problems/PROSUM
 */
 /**
 Input:
-5
+6
 3
 3 4 5
 4
@@ -13,7 +13,9 @@ Input:
 4
 1 14 1 1
 6
-	3 2 5 2 1 4
+3 2 5 2 1 3
+10
+4 5 2 7 1 0 3 5 8 10
 
 Output:
 3
@@ -48,7 +50,7 @@ void driver()
 	  {
 	    if(a[i]!=0&&a[i]!=1&&a[i]!=2)
 		{
-		    ans+=(i-zero-one-two);
+		    ans+=(i-zero-one);
 		}
 		else
 		{
@@ -58,7 +60,8 @@ void driver()
 						break;
 				case 1:	one++;
 						break;
-				case 2: two++;
+				case 2: ans+=(i-one-zero-two);
+						two++;
 						break;
 			}
 		}
