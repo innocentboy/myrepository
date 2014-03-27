@@ -984,7 +984,7 @@ LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-s
 SOLU: Use the inplace merge sort used by STL containars of C++/JAVA.
 
 //********************************//
-Q.98:
+uQ.98:
 LOG problem.
 
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-fresher-about-algorithms-37/
@@ -1383,6 +1383,8 @@ path equals to N.
 bool isPathExists(Node *root, int N)
 Note: We can assume that node contains only positive integers
 
+LINK:::http://n00tc0d3r.blogspot.in/2013/01/tree-path-sum.html
+
 LINK:::http://www.geeksforgeeks.org/forums/topic/amazon-interview-question-for-software-engineerdeveloper-about-trees-18/
 
 //********************************//
@@ -1625,3 +1627,23 @@ MATH  LINK:::  http://www.mathworks.in/help/matlab/ref/unique.html
 1.	
 
 */
+
+//********************************************************************************//
+//###############################################################################//
+//*******************************************************************************//
+PUZZLE LINK:::
+
+http://wiki.xkcd.com/irc/puzzles
+
+//********************************************************************************//
+//###############################################################################//
+//*******************************************************************************//
+
+OO DESIGN:->
+LINK:::  http://meusite.mackenzie.com.br/rogerio/AddressBookExample/index.html
+		http://www.cs.gordon.edu/courses/cs211/ATMExample/index.html
+		http://creately.com/diagram/example/hanvubrw2/Restaurant+Booking+System
+
+//********************************************************************************//
+//###############################################################################//
+//*******************************************************************************//

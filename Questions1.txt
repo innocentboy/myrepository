@@ -874,3 +874,26 @@ Q.:85
 //#################################################//
 Q.:86
 
+
+
+
+    Some hashing links:
+
+    Wiki: http://en.wikipedia.org/wiki/Hash_function
+
+    Youtube:
+    http://www.youtube.com/watch?v=KW0UvOW0XIo
+    http://www.youtube.com/watch?v=eUJxyfAewxs
+
+    http://www.austincc.edu/comer/ds12s/program7.htm
+    http://www.cprogramming.com/snippets/source-code/hash-table-in-cplusplus
+
+    http://www.tenouk.com/Module29a.html
+    http://www.dreamincode.net/forums/topic/136277-hash-table-and-its-usage/
+    http://www.cplusplus.com/reference/locale/collate/hash/
+    http://www.cplusplus.com/forum/general/88539/
+	
+Given an a grid where laser has 3 functions Move,Change Color,draw. Define data structures that would be required if we were only considering the cost of change color. Define logic if now you neglect all costs and only consider the cost of moving.
+
+Implement Generic Hash.
+	
