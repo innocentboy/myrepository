@@ -2,7 +2,7 @@
  * heap.h
  *
  *  Created on: Oct 29, 2013
- *      Author: Indresh Gahoi
+ *      Author: Sanjay Pandey
  */
 
 #ifndef HEAP_H_

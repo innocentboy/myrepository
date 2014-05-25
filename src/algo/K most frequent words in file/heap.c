@@ -2,7 +2,7 @@
  * heap.c
  *
  *  Created on: Oct 29, 2013
- *      Author: Indresh Gahoi
+ *      Author: Sanjay Pandey
  */
 
 #include<stdio.h>

@@ -2,7 +2,7 @@
  * kMostFrequentWord.c
  *
  *  Created on: Oct 29, 2013
- *      Author: Indresh Gahoi
+ *      Author: Sanjay Pandey
  */
 #include<stdio.h>
 #include<limits.h>
@@ -11,18 +11,17 @@
 #include<stdlib.h>
 
 /* Question :-
- * Given a book of words. Assume you have enough main memory to accommodate all words. design a data structure
- * to find top K maximum occurring words. The data structure should be dynamic so that new words can be
- * added .
- *
+ * Given a book of words. Assume you have enough main memory to accommodate all words. design a
+ * data structure to find top K maximum occurring words. The data structure should be dynamic so
+ *that new words can be added .
  */
 
 /*
  * Following are the advantages of Trie over hash table. From Wiki page of Trie.
 
-Tries support ordered iteration, whereas iteration over a hash table will result in a pseudorandom order
- given by the hash function (and further affected by the order of hash collisions, which is determined by the
- implementation).
+Tries support ordered iteration, whereas iteration over a hash table will result in a pseudorandom
+order given by the hash function (and further affected by the order of hash collisions, which is
+determined by the implementation).
 
 Tries facilitate longest-prefix matching, but hashing does not, as a consequence of the above.
  Performing such a "closest fit" find can, depending on implementation, be as quick as an exact find.
